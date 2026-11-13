@@ -12,11 +12,11 @@ Công nghệ: C#, .NET 10, Razor Pages, Entity Framework Core và SQL Server
 
 ## Chức năng
 
-- Đặt câu hỏi bằng tiếng Việt. Nếu không nhập thời điểm, ứng dụng dùng ngày hiện tại theo giờ Việt Nam.
-- Tra quy chế theo ngày hoặc tháng/năm.
-- Hỏi lại khi câu hỏi chưa rõ; báo thiếu căn cứ khi chưa có quy định phù hợp.
-- Lưu lịch sử và mở lại đúng nguồn đã trích.
-- Quản trị viên tạo bản nháp, lưu nội dung, duyệt, thay thế và thu hồi phiên bản.
+1. Đặt câu hỏi bằng tiếng Việt. Nếu không nhập thời điểm, ứng dụng dùng ngày hiện tại theo giờ Việt Nam.
+2. Tra quy chế theo ngày hoặc tháng/năm.
+3. Hỏi lại khi câu hỏi chưa rõ; báo thiếu căn cứ khi chưa có quy định phù hợp.
+4. Lưu lịch sử và mở lại đúng nguồn đã trích.
+5. Quản trị viên tạo bản nháp, lưu nội dung, duyệt, thay thế và thu hồi phiên bản.
 
 Phần nhận diện dùng từ đồng nghĩa và mẫu câu viết bằng C#. Chủ đề mới cần bổ sung quy tắc. Ứng dụng chưa xử lý đơn nghỉ hoặc tính số ngày phép còn lại của từng người.
 
