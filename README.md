@@ -4,9 +4,9 @@
 
 Mã nguồn: [iloveuu282/PPPTPMHDT](https://github.com/iloveuu282/PPPTPMHDT).
 
-- Sinh viên: Mai Việt Hoàng — 1250080058.
-- Giảng viên: Phạm Trọng Huynh.
-- Công nghệ: C#, .NET 10, Razor Pages, Entity Framework Core và SQL Server Express.
+Sinh viên: Mai Việt Hoàng — 1250080058.
+Giảng viên: Phạm Trọng Huynh.
+Công nghệ: C#, .NET 10, Razor Pages, Entity Framework Core và SQL Server
 
 Ứng dụng giúp tra cứu quy chế về thời gian làm việc, đăng ký nghỉ và làm việc tại công ty. Mỗi câu trả lời có căn cứ sẽ kèm điều khoản, phiên bản và liên kết xem nguồn. Dữ liệu quy chế là dữ liệu giả lập dùng cho đồ án.
 
@@ -77,23 +77,7 @@ try {
 
 Mở **http://localhost:5081**. Lệnh tạo database mới có tên `TroLyQuyCheDemo_Final_...`, không thay dữ liệu trong `TroLyQuyCheDb`. Thông tin kết nối được lưu riêng ở `output/final-demo.json`. Những lần sau chỉ cần chạy `run_demo.ps1` để dùng lại database này.
 
-## Câu hỏi để thử
-
-Kết quả dưới đây dùng bộ trình chiếu 9–17:
-
-| Câu hỏi | Kết quả mong đợi |
-|---|---|
-| Giờ bắt đầu vào làm? | 9 giờ sáng, nguồn thời gian 4.0 |
-| Giờ tan làm? | 17 giờ, nguồn thời gian 4.0 |
-| Giờ vào làm tháng 5/2026? | 8 giờ sáng, nguồn lịch sử 1.0 |
-| Xin nghỉ báo trước bao lâu? | Hai trường hợp: nghỉ 1 ngày báo trước ít nhất 1 ngày; từ 2 ngày báo trước ít nhất 5 ngày làm việc |
-| Nghỉ 3 ngày làm việc thì báo trước bao lâu? | Ít nhất 5 ngày làm việc |
-| Nghỉ bao lâu? | Hỏi lại để biết người dùng muốn tra nội dung gì |
-| Được nghỉ tối đa bao nhiêu ngày mỗi năm? | Báo thiếu căn cứ về hạn mức năm |
-
-## Kiểm thử
-
-Xem [cách chạy và kết quả kiểm thử](docs/kiem-thu/KetQua_KiemThu.md). Bộ đã lưu có 67 câu chuẩn và 44 câu hồi quy, kèm kiểm tra dữ liệu, quản trị và giao diện. Các kết quả ghi rõ ngày chạy; không phải cam kết hiểu đúng mọi câu tiếng Việt.
+67 câu chuẩn và 44 câu hồi quy, kèm kiểm tra dữ liệu, quản trị và giao diện. Các kết quả ghi rõ ngày chạy; không phải cam kết hiểu đúng mọi câu tiếng Việt.
 
 ## Publish
 
@@ -104,40 +88,3 @@ dotnet output/publish/TroLyQuyChe.Web.dll --contentRoot "$PWD/output/publish" --
 
 Máy chạy bản publish cần ASP.NET Core Runtime 10 và database đã chuẩn bị. Build, publish, backup và cookie nằm ngoài danh sách đưa lên Git.
 
-## Các thư mục chính
-
-| Thư mục | Nội dung |
-|---|---|
-| `src/TroLyQuyChe.Web/Pages/` | Giao diện Razor và xử lý nhập liệu |
-| `src/TroLyQuyChe.Web/Services/Understanding/` | Nhận diện câu hỏi và số ngày nghỉ |
-| `src/TroLyQuyChe.Web/Services/` | Xử lý nghiệp vụ hỏi đáp và quản trị |
-| `src/TroLyQuyChe.Web/Data/` | Các lớp dữ liệu, kết nối EF Core và migration |
-| `tests/` | Kiểm thử C# và tạo dữ liệu trình chiếu |
-| `scripts/` | Lệnh chạy web và kiểm thử giao diện |
-| `docs/` | Đặc tả, thiết kế, sơ đồ, ảnh và kết quả kiểm thử |
-
-## Chỉnh giao diện và cách hiểu câu hỏi
-
-Các đường dẫn dưới đây tính từ `src/TroLyQuyChe.Web/`:
-
-| Cần sửa | Vị trí |
-|---|---|
-| Font, cỡ chữ | `wwwroot/css/site.css`: `--font`, `--text`, `--small`, `--tiny`, `--heading` |
-| Màu | Cùng file CSS: `--accent`, `--accent-hover`, `--ink`, `--muted`, `--bg`, `--surface`, `--line` |
-| Khoảng cách, độ rộng | `--space-1` đến `--space-10`, `--page-width`, `--sidebar-width`, `--panel-radius`, `--control-radius` |
-| Ô hỏi và menu | `Pages/Index.cshtml`, `Pages/Shared/_Layout.cshtml` |
-| Từ đồng nghĩa, mẫu câu | `Services/Understanding/QuestionVocabulary.cs`, `QuestionRecognizer.cs` |
-| Chọn quy chế theo ý hỏi | `Services/PolicyCatalog.cs` |
-
-Nội dung câu trả lời được sửa qua trang quản trị và lưu trong SQL Server.
-
-## Tài liệu đi kèm
-
-- [Đặc tả chức năng](docs/nghiep-vu/01_DacTa_NghiepVu.md).
-- [Bộ quy chế trình chiếu](docs/nghiep-vu/06_BoQuyChe_ChotDemo.md).
-- [Thiết kế hệ thống](docs/THIET_KE_FINAL.md).
-- [Một thao tác đi qua code và database như thế nào](docs/demo/Luong_NguoiDung_Code_SQL.md).
-- [SQL để kiểm tra trong SSMS](docs/demo/DoiChieu_BanChot.sql).
-- [Sơ đồ draw.io](docs/uml).
-
-Ảnh chạy thực tế ngày 11/11/2026: [bộ quy chế](docs/hinh-anh/01-quy-che.png), [câu trả lời có nguồn](docs/hinh-anh/02-tra-loi.png), [giao diện điện thoại](docs/hinh-anh/03-dien-thoai.png).
