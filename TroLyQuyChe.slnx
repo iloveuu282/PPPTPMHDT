@@ -1,0 +1,4 @@
+<Solution>
+  <Folder Name="/src/"><Project Path="src/TroLyQuyChe.Web/TroLyQuyChe.Web.csproj" /></Folder>
+  <Folder Name="/tests/"><Project Path="tests/TroLyQuyChe.Checks/TroLyQuyChe.Checks.csproj" /></Folder>
+</Solution>

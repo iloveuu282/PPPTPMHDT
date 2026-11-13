@@ -1,0 +1,20 @@
+@page "{id:int}"
+@model TroLyQuyChe.Web.Pages.Admin.TimelineModel
+@using TroLyQuyChe.Web.Services
+@{ ViewData["Title"] = "Dòng thời gian phiên bản"; }
+<a asp-page="Index">← Kho quy chế</a>
+<h1>@Model.Document.Code · Dòng thời gian</h1>
+<p>@FullText.Expand(Model.Document.Title)</p>
+<p class="hint">Đối chiếu hôm nay @Model.Today.ToString("dd/MM/yyyy") theo Việt Nam. Các phiên bản được xếp theo ngày bắt đầu.</p>
+<ol class="version-timeline">
+@foreach (var v in Model.Document.Versions.OrderBy(v => v.EffectiveFrom).ThenBy(v => v.Id))
+{
+    <li class="panel timeline-item"><h2><a asp-page="Edit" asp-route-id="@v.Id">Phiên bản @v.VersionLabel</a></h2><span class="badge @v.Status">@VersionPresentation.State(v, Model.Today)</span>
+    <dl><dt>Khoảng tra cứu</dt><dd>@VersionPresentation.Period(v)</dd><dt>Trạng thái phê duyệt</dt><dd>@VersionPresentation.StoredState(v.Status)</dd><dt>Ngày kết thúc gốc</dt><dd>@(v.EffectiveTo?.ToString("dd/MM/yyyy") ?? "Để trống")</dd><dt>Thời điểm duyệt</dt><dd>@(v.ApprovedAt?.ToOffset(TimeSpan.FromHours(7)).ToString("dd/MM/yyyy HH:mm") ?? "Chưa có thông tin")</dd><dt>Thay thế bản</dt><dd>@(v.ReplacesVersionId.HasValue ? $"Phiên bản {Model.Document.Versions.SingleOrDefault(p => p.Id == v.ReplacesVersionId)?.VersionLabel ?? v.ReplacesVersionId.ToString()}" : "Không ghi quan hệ thay thế")</dd></dl>
+    @foreach (var next in v.Replacements.Where(n => n.Status != TroLyQuyChe.Web.Data.VersionStatus.Draft)) { <p>→ Bản kế tiếp <a asp-page="Edit" asp-route-id="@next.Id">@next.VersionLabel</a> áp dụng từ @next.EffectiveFrom.ToString("dd/MM/yyyy").</p> }
+    @if (v.Status == TroLyQuyChe.Web.Data.VersionStatus.Draft) { <p class="hint">Các ngày của bản nháp chỉ là dự kiến. Bản này chưa được dùng để trả lời.</p> }
+    </li>
+}
+</ol>
+@if (Model.Document.Versions.Count == 0) { <p>Văn bản chưa có phiên bản.</p> }
+<p class="hint">Bản nháp chưa được dùng để trả lời. Thu hồi bản mới không tự khôi phục bản trước.</p>

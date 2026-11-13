@@ -1,0 +1,24 @@
+@page "/quy-che"
+@model TroLyQuyChe.Web.Pages.PoliciesModel
+@{ ViewData["Title"] = "Bộ quy chế đang áp dụng"; }
+<div class="eyebrow">TRA CỨU NỘI BỘ · DỮ LIỆU MÔ PHỎNG</div>
+<h1>Bộ quy chế đang áp dụng</h1>
+<p class="lead">Thời gian làm việc, đăng ký nghỉ và làm việc tại công ty. Mở từng văn bản để đọc điều khoản trước khi đặt câu hỏi.</p>
+<p class="hint">Ngày đối chiếu: @Model.Today.ToString("dd/MM/yyyy") theo giờ Việt Nam. Chỉ hiển thị bản đã duyệt, chưa thu hồi và đang có hiệu lực.</p>
+<div class="policy-catalog">
+@foreach (var v in Model.Versions)
+{
+    <details class="panel">
+        <summary>@v.Document.Code · @FullText.Expand(v.Document.Title)</summary>
+        <p><span class="version-label">Phiên bản @v.VersionLabel</span> · @v.EffectiveFrom.ToString("dd/MM/yyyy") – @(v.ApplicableUntil?.ToString("dd/MM/yyyy") ?? "Đến khi có bản thay thế hoặc quyết định thu hồi")</p>
+        @foreach (var c in v.Clauses.OrderBy(c => c.Id))
+        {
+            <h2>@c.ArticleNumber</h2><blockquote>@FullText.Expand(c.Body)</blockquote>
+            @if (FullText.HasChanges(c.Body)) { <p class="hint expanded-terms-note">@FullText.SourceNotice</p> }
+        }
+    </details>
+}
+</div>
+@if (Model.Versions.Count == 0) { <p class="notice">Chưa có quy chế được duyệt có hiệu lực hôm nay.</p> }
+<p class="hint">Giới hạn đăng ký nghỉ theo tuần và tháng áp dụng đồng thời. Đây là quy chế nội bộ mô phỏng; ứng dụng tra cứu quy định, không tiếp nhận đơn nghỉ hoặc tính số ngày nghỉ còn lại.</p>
+<a class="back-link" asp-page="/Index">← Đặt câu hỏi về quy chế</a>

@@ -1,0 +1,43 @@
+{
+  "base": "http://localhost:5080",
+  "AdminMutations": false,
+  "Passed": 28,
+  "Checks": [
+    "CSS và JavaScript tải thực tế",
+    "Ba bộ quy chế hoàn chỉnh và giờ mới",
+    "Giờ bắt đầu vào làm?",
+    "Giờ tan làm?",
+    "Làm ơn cho biết giờ tan làm?",
+    "Không hỏi giờ vào làm, tôi hỏi giờ tan làm?",
+    "Mỗi tuần làm việc bao nhiêu ngày?",
+    "Nghỉ trưa bao lâu?",
+    "Được xin nghỉ phép bao nhiêu ngày?",
+    "Xin nghỉ báo trước bao lâu?",
+    "Nghỉ từ 2 ngày trở lên cần báo trước bao lâu?",
+    "Nghỉ hơn 1 ngày làm việc cần báo trước mấy ngày?",
+    "Xin nghỉ có cần quản lý duyệt không?",
+    "Nghỉ 4 ngày trong một tuần ai duyệt?",
+    "Được nghỉ tối đa bao nhiêu ngày mỗi năm?",
+    "Nghỉ 999999999999999999999999999999999999 ngày báo trước bao lâu?",
+    "Nghỉ bao lâu?",
+    "Giờ vào làm theo quy chế cũ?",
+    "Giờ bắt đầu vào làm tháng 5/2026?",
+    "Giờ tan làm tháng 8/2026?",
+    "Một năm sau vẫn áp dụng bản không hết hạn",
+    "Lịch sử và nguồn giữ đúng phiên bản",
+    "Trình duyệt khác không mở lịch sử và nguồn riêng",
+    "Khách và POST không có chống giả mạo bị chặn",
+    "Không thực thi HTML trong câu hỏi",
+    "Không tràn ngang ở 320, 390, 820 và 1440px",
+    "Đăng nhập quản trị",
+    "Đăng xuất và không còn trang học hệ thống"
+  ],
+  "History": {
+    "url": "http://localhost:5080/?id=372#ket-qua",
+    "text": "Nghỉ 1 ngày làm việc phải gửi yêu cầu trước ít nhất 1 ngày làm việc.\n\nNghỉ từ 2 ngày làm việc trở lên phải gửi yêu cầu trước ít nhất 5 ngày làm việc.",
+    "sources": [
+      "/nguon/260",
+      "/nguon/261"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+@page
+@model ErrorModel
+@{ ViewData["Title"] = "Lỗi kỹ thuật"; }
+<section class="panel"><h1>Không thể hoàn tất yêu cầu</h1><p>Hệ thống tạm thời không xử lý được yêu cầu. Vui lòng thử lại hoặc liên hệ quản trị viên.</p><p>Đây không phải kết quả thiếu căn cứ nghiệp vụ.</p><p class="hint">Mã yêu cầu: @Model.RequestId</p><a asp-page="/Index">Về trang hỏi đáp</a></section>

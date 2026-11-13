@@ -1,0 +1,35 @@
+@page "{id:int}"
+@model TroLyQuyChe.Web.Pages.Admin.EditModel
+@using TroLyQuyChe.Web.Data
+@using TroLyQuyChe.Web.Services
+@{ ViewData["Title"] = "Chi tiết phiên bản"; }
+<a asp-page="Index">← Kho quy chế</a><h1>@Model.Version.Document.Code · @Model.Version.VersionLabel</h1><p class="badge @Model.Version.Status">@TroLyQuyChe.Web.Pages.Admin.IndexModel.State(Model.Version)</p>
+@if (TempData["Message"] is string message) { <p class="notice">@message</p> }
+<div asp-validation-summary="All" class="error" role="alert"></div>
+@if (Model.Version.Status == VersionStatus.Draft)
+{
+<form method="post" class="panel"><input type="hidden" asp-for="Revision" /><label asp-for="Label">Phiên bản</label><input asp-for="Label" required maxlength="30" /><div class="two-columns"><div><label asp-for="From">Từ ngày</label><input asp-for="From" type="date" /></div><div><label asp-for="To">Đến ngày (tùy chọn)</label><input asp-for="To" type="date" /></div></div>
+<h2>Điều khoản</h2><p class="hint">Chọn chủ đề để bộ tra cứu lấy đúng ý hỏi. Ngưỡng chỉ dùng cho “Báo trước khi nghỉ phép” và là số ngày dự định nghỉ, không phải số ngày báo trước. Ví dụ: nghỉ không quá 1 ngày → để trống cận dưới, cận trên là 1; nghỉ trên 1 ngày → cận dưới là 1, để trống cận trên. Thời hạn báo trước viết trong nội dung điều khoản.</p>
+@for (var i = 0; i < Model.Clauses.Count; i++)
+{
+<fieldset><legend>Điều khoản @(i + 1)</legend><div class="two-columns"><div><label asp-for="Clauses[i].Article">Số điều</label><input asp-for="Clauses[i].Article" maxlength="50" /></div><div><label asp-for="Clauses[i].Topic">Chủ đề</label><select asp-for="Clauses[i].Topic">@foreach (var topic in PolicyCatalog.TopicsFor(Model.Version.Document.Code)) { <option value="@topic">@PolicyCatalog.TopicLabel(topic)</option> }</select></div></div><label asp-for="Clauses[i].Body">Nội dung điều khoản</label><textarea asp-for="Clauses[i].Body" rows="3" maxlength="10000"></textarea><label asp-for="Clauses[i].Location">Vị trí nguồn (tùy chọn)</label><input asp-for="Clauses[i].Location" maxlength="400" /><div class="two-columns leave-range"><div><label asp-for="Clauses[i].Minimum">Số ngày dự định nghỉ phải lớn hơn (cận dưới)</label><input asp-for="Clauses[i].Minimum" type="number" step="1" /></div><div><label asp-for="Clauses[i].Maximum">Số ngày dự định nghỉ không vượt quá (cận trên)</label><input asp-for="Clauses[i].Maximum" type="number" step="1" /></div></div><label><input class="inline-check" asp-for="Clauses[i].Remove" /> Bỏ điều khoản này khi lưu nháp</label></fieldset>
+}
+<div class="toolbar"><button asp-page-handler="Save">Lưu bản nháp</button><button class="secondary" asp-page-handler="AddRow" formnovalidate>Thêm ô điều khoản</button></div></form>
+<form method="post" asp-page-handler="Approve" class="panel confirmation"><input type="hidden" asp-for="Revision" /><h2>Xác nhận duyệt</h2><p>Chỉ duyệt nội dung đã lưu. Sau khi duyệt, nội dung không thể sửa; hệ thống kiểm tra chồng lấn hiệu lực.</p><label><input class="inline-check" asp-for="EffectiveOnApproval" /> Áp dụng từ ngày duyệt theo giờ Việt Nam, không đặt ngày hết hạn.</label><p class="hint">Bỏ chọn để dùng khoảng ngày đã lưu trong bản nháp, ví dụ khi lên lịch áp dụng sau. Chỉ bản đến ngày hiệu lực mới dùng cho hỏi đáp.</p><label><input class="inline-check" asp-for="ReplaceCurrent" /> Thay thế phiên bản đang áp dụng từ ngày hiệu lực của bản mới.</label><p class="hint">Nguồn cũ được giữ nguyên cho lịch sử. Có thể đính chính trong cùng ngày; bản trước chỉ còn dùng đối chiếu lượt hỏi đã lưu. Thu hồi bản mới không tự khôi phục bản cũ.</p>@if (Model.MissingTopics.Length > 0)
+{
+    <div class="notice" role="alert"><strong>Nội dung chưa có trong bản đã lưu:</strong> @string.Join(", ", Model.MissingTopics). Phiên bản mới thay toàn bộ văn bản; các nội dung này sẽ không còn căn cứ trả lời.</div>
+    <label><input class="inline-check" asp-for="AcknowledgeMissingTopics" /> Tôi chủ động bỏ các chủ đề trên và chấp nhận hệ thống báo thiếu căn cứ.</label>
+}
+<label><input class="inline-check" type="checkbox" required /> Tôi đã kiểm tra nội dung và hiệu lực.</label><button>Duyệt phiên bản đã lưu</button></form>
+}
+else
+{
+<section class="panel"><p>Hiệu lực: @VersionPresentation.Period(Model.Version)</p>
+@foreach (var c in Model.Version.Clauses.OrderBy(c => c.Id)) { <h2>@c.ArticleNumber · @PolicyCatalog.TopicLabel(c.Topic)</h2><blockquote>@FullText.Expand(c.Body)</blockquote>@if (FullText.HasChanges(c.Body)) { <p class="hint">@FullText.SourceNotice</p> } }
+<a asp-page="Create" asp-route-documentId="@Model.Version.DocumentId" asp-route-copyFrom="@Model.Version.Id">Tạo bản nháp mới từ nội dung này</a></section>
+@if (Model.Version.Status == VersionStatus.Approved)
+{ <form method="post" asp-page-handler="Revoke" class="panel confirmation"><input type="hidden" asp-for="Revision" /><h2>Xác nhận thu hồi</h2><p>Lượt hỏi mới sẽ không dùng phiên bản này. Nguồn của lượt hỏi lịch sử vẫn mở được.</p><label asp-for="Reason">Lý do thu hồi</label><textarea asp-for="Reason" required maxlength="1000"></textarea><label><input class="inline-check" type="checkbox" required /> Tôi xác nhận thu hồi phiên bản.</label><button class="danger">Thu hồi phiên bản</button></form> }
+}
+<p><a asp-page="Actions" asp-route-version="@Model.Version.Id">Xem nhật ký của phiên bản</a></p>
+
+@section Scripts { <script src="~/js/admin-editor.js" asp-append-version="true" defer></script> }

@@ -1,0 +1,15 @@
+@page
+@model TroLyQuyChe.Web.Pages.Admin.IndexModel
+@{ ViewData["Title"] = "Quản trị quy chế"; }
+<div class="eyebrow">KHO QUY CHẾ @IdentityOptions.Value.UpperName</div><h1>Văn bản và phiên bản</h1><p class="lead">Tạo bản nháp để thay đổi quy chế. Phiên bản đã duyệt giữ nguyên để lịch sử luôn đối chiếu được.</p>
+<div class="toolbar"><a asp-page="/Admin/Actions">Nhật ký phiên bản</a><a asp-page="/Admin/History">Lịch sử hỏi đáp</a></div>
+@if (TempData["Message"] is string message) { <p class="notice" role="status">@message</p> }
+<details class="panel"><summary>Tạo văn bản mới</summary><p class="hint">Văn bản mới được lưu trong kho. Để hỏi đáp một chủ đề mới ngoài ba nhóm hiện có, cần bổ sung mẫu nhận diện và ánh xạ trong ứng dụng.</p><form method="post"><div asp-validation-summary="All" class="error"></div><label asp-for="Code">Mã văn bản</label><input asp-for="Code" maxlength="30" required /><label asp-for="Title">Tên văn bản</label><input asp-for="Title" maxlength="300" required /><button>Tạo văn bản</button></form></details>
+@foreach (var doc in Model.Documents)
+{
+<section class="panel document-card"><div class="toolbar"><h2>@doc.Code · @FullText.Expand(doc.Title)</h2><a asp-page="/Admin/Timeline" asp-route-id="@doc.Id">Dòng thời gian</a><a asp-page="/Admin/Create" asp-route-documentId="@doc.Id">+ Tạo bản nháp</a></div>
+@if (doc.Versions.Count == 0) { <p class="muted">Chưa có phiên bản. Tạo bản nháp và nhập điều khoản để bắt đầu.</p> }
+@foreach (var version in doc.Versions.OrderByDescending(v => v.EffectiveFrom).ThenByDescending(v => v.Id))
+{ <a class="version-row" asp-page="/Admin/Edit" asp-route-id="@version.Id"><strong>Phiên bản @version.VersionLabel</strong><span class="badge @version.Status">@TroLyQuyChe.Web.Pages.Admin.IndexModel.State(version)</span><span>@TroLyQuyChe.Web.Services.VersionPresentation.Period(version)</span></a> }
+</section>
+}

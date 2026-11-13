@@ -1,0 +1,4 @@
+@page
+@model TroLyQuyChe.Web.Pages.Admin.CreateModel
+@{ ViewData["Title"] = "Tạo bản nháp"; }
+<section class="panel narrow"><h1>Tạo bản nháp</h1><p>Khoảng hiệu lực tính cả ngày bắt đầu và kết thúc. Chưa giới hạn ngày kết thúc thì để trống.</p>@if (Model.CopyFrom.HasValue) { <p class="notice">Bản nháp sẽ sao chép nội dung đã có để bạn chỉnh sửa và giữ các điều khoản còn áp dụng.</p> }<form method="post"><div asp-validation-summary="All" class="error"></div><input type="hidden" asp-for="DocumentId" /><input type="hidden" asp-for="CopyFrom" /><label asp-for="Label">Nhãn phiên bản</label><input asp-for="Label" maxlength="30" required /><label asp-for="From">Từ ngày</label><input asp-for="From" type="date" required /><label asp-for="To">Đến ngày (tùy chọn)</label><input asp-for="To" type="date" /><button>Tạo bản nháp</button></form></section>

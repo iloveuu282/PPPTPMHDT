@@ -1,0 +1,6 @@
+@page
+@model TroLyQuyChe.Web.Pages.Admin.ActionsModel
+@{ ViewData["Title"] = "Nhật ký phiên bản"; }
+<a asp-page="Index">← Kho quy chế</a><h1>Nhật ký phiên bản</h1><p>100 thao tác gần nhất, lưu cùng giao dịch với thay đổi phiên bản.</p><div class="panel table-scroll"><table><thead><tr><th>Thời điểm Việt Nam</th><th>Phiên bản</th><th>Người thao tác</th><th>Hành động và lý do</th></tr></thead><tbody>
+@foreach (var a in Model.Actions) { <tr><td>@a.OccurredAt.ToOffset(TimeSpan.FromHours(7)).ToString("dd/MM/yyyy HH:mm")</td><td><a asp-page="Edit" asp-route-id="@a.DocumentVersionId">@a.DocumentVersion.Document.Code · @a.DocumentVersion.VersionLabel</a></td><td>@a.ActorUser.Username</td><td>@TroLyQuyChe.Web.Services.VersionPresentation.ActionLabel(a.Action) · @FullText.Expand(a.Reason)</td></tr> }
+</tbody></table>@if (Model.Actions.Count == 0) { <p>Chưa có thao tác quản trị nào.</p> }</div>

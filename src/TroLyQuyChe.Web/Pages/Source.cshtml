@@ -1,0 +1,21 @@
+@page "/nguon/{id:long}"
+@model SourceModel
+@{
+    ViewData["Title"] = "Nguồn trích dẫn";
+    var c = Model.Citation.Clause; var v = c.DocumentVersion;
+    var status = v.Status switch { TroLyQuyChe.Web.Data.VersionStatus.Approved => "Đã duyệt", TroLyQuyChe.Web.Data.VersionStatus.Revoked => "Đã thu hồi", _ => "Bản nháp" };
+}
+<a class="back-link" asp-page="/Index" asp-route-id="@Model.Citation.QaEntryId" asp-fragment="ket-qua">← Về lượt hỏi #@Model.Citation.QaEntryId</a>
+<article class="panel source">
+    <div class="source-title"><div><div class="eyebrow">NGUỒN TRÍCH DẪN #@Model.Citation.Id</div><h1>@v.Document.Code · @c.ArticleNumber</h1></div><span class="badge @v.Status">@status</span></div>
+    <p class="lead">@FullText.Expand(v.Document.Title)</p>
+    <dl class="source-metadata">
+        <dt>Phiên bản</dt><dd><span class="version-label">@v.VersionLabel</span></dd>
+        <dt>Hiệu lực</dt><dd>@VersionPresentation.Period(v)</dd>
+        <dt>Ngày duyệt</dt><dd>@(v.ApprovedAt.HasValue ? TimeZoneInfo.ConvertTimeBySystemTimeZoneId(v.ApprovedAt.Value, "SE Asia Standard Time").ToString("dd/MM/yyyy HH:mm") : "Chưa có thông tin thời điểm duyệt")</dd>
+        <dt>Vị trí điều khoản</dt><dd>@IdentityOptions.Value.SourceLabel(c.SourceLocation) · @c.ArticleNumber</dd>
+    </dl>
+    <section class="source-excerpt"><h2><svg class="icon" aria-hidden="true"><use href="#i-book" /></svg> @(FullText.HasChanges(c.Body) ? "Nội dung điều khoản" : "Nguyên văn điều khoản")</h2><blockquote>@FullText.Expand(c.Body)</blockquote>@if (FullText.HasChanges(c.Body)) { <p class="hint expanded-terms-note">@FullText.SourceNotice</p> }</section>
+    @if (v.Status == TroLyQuyChe.Web.Data.VersionStatus.Revoked) { <p class="error">Nguồn đã thu hồi. Hiển thị để đối chiếu lượt hỏi lịch sử; không dùng cho câu hỏi mới.</p> }
+    <p class="hint source-note">Đây là đúng phiên bản đã trích trong lượt hỏi. Chưa có tệp đính kèm.</p>
+</article>

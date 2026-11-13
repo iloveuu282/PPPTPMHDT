@@ -1,0 +1,791 @@
+[
+  {
+    "Id": "S01",
+    "Question": "Giờ bắt đầu vào làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Contains": [
+      "8 giờ sáng"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S02",
+    "Question": "Mấy giờ vào ca?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Contains": [
+      "8 giờ sáng"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S03",
+    "Question": "Đi làm lúc mấy giờ?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Contains": [
+      "8 giờ sáng"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S04",
+    "Question": "Giờ tan làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Contains": [
+      "16 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S05",
+    "Question": "Mấy giờ kết thúc làm việc?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Contains": [
+      "16 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S06",
+    "Question": "Giờ về là mấy giờ?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Contains": [
+      "16 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S07",
+    "Question": "Lịch làm việc thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkSchedule"
+    ],
+    "Contains": [
+      "thứ Hai",
+      "thứ Sáu"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S08",
+    "Question": "Công ty làm những ngày nào?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkSchedule"
+    ],
+    "Contains": [
+      "thứ Hai",
+      "thứ Sáu"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S09",
+    "Question": "Thứ Bảy có làm không?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkSchedule"
+    ],
+    "Contains": [
+      "thứ Hai",
+      "thứ Sáu"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S10",
+    "Question": "Chủ nhật có làm việc không?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkSchedule"
+    ],
+    "Contains": [
+      "thứ Hai",
+      "thứ Sáu"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S11",
+    "Question": "Một tuần làm mấy ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkSchedule"
+    ],
+    "Contains": [
+      "thứ Hai",
+      "thứ Sáu"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S12",
+    "Question": "Nghỉ trưa lúc nào?",
+    "Status": "Answered",
+    "Topics": [
+      "LunchBreak"
+    ],
+    "Contains": [
+      "12 giờ",
+      "13 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S13",
+    "Question": "Giờ ăn trưa thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "LunchBreak"
+    ],
+    "Contains": [
+      "12 giờ",
+      "13 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S14",
+    "Question": "Nghỉ trưa bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LunchBreak"
+    ],
+    "Contains": [
+      "12 giờ",
+      "13 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S15",
+    "Question": "Mỗi ngày làm mấy tiếng?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkDuration"
+    ],
+    "Contains": [
+      "7 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S16",
+    "Question": "Số giờ làm mỗi ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkDuration"
+    ],
+    "Contains": [
+      "7 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S17",
+    "Question": "Làm việc bao nhiêu giờ một ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkDuration"
+    ],
+    "Contains": [
+      "7 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S18",
+    "Question": "Xin nghỉ báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice",
+      "LeaveNotice"
+    ],
+    "Contains": [
+      "1 ngày làm việc",
+      "5 ngày làm việc"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S19",
+    "Question": "Xin vắng có phép cần báo trước mấy ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice",
+      "LeaveNotice"
+    ],
+    "Contains": [
+      "1 ngày làm việc",
+      "5 ngày làm việc"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S20",
+    "Question": "Đăng ký nghỉ phải thông báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice",
+      "LeaveNotice"
+    ],
+    "Contains": [
+      "1 ngày làm việc",
+      "5 ngày làm việc"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S21",
+    "Question": "Xin nghỉ ai duyệt?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveApproval"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S22",
+    "Question": "Nghỉ phép ai đồng ý?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveApproval"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S23",
+    "Question": "Cấp nào duyệt yêu cầu nghỉ?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveApproval"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S24",
+    "Question": "Thủ tục xin nghỉ thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveRequest"
+    ],
+    "Contains": [
+      "ngày bắt đầu",
+      "lý do"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S25",
+    "Question": "Đăng ký nghỉ ở đâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveRequest"
+    ],
+    "Contains": [
+      "ngày bắt đầu",
+      "lý do"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S26",
+    "Question": "Xin nghỉ gửi cho ai?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveRequest"
+    ],
+    "Contains": [
+      "ngày bắt đầu",
+      "lý do"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S27",
+    "Question": "Nghỉ phép tính theo ngày làm việc hay ngày lịch?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveCalendar"
+    ],
+    "Contains": [
+      "thứ Hai",
+      "tháng dương lịch"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S28",
+    "Question": "Tuần đăng ký nghỉ tính thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveCalendar"
+    ],
+    "Contains": [
+      "thứ Hai",
+      "tháng dương lịch"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S29",
+    "Question": "Muốn xin nghỉ thêm thì sao?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveException"
+    ],
+    "Contains": [
+      "trưởng bộ phận"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S30",
+    "Question": "Nghỉ vượt hạn mức ai duyệt?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveException"
+    ],
+    "Contains": [
+      "trưởng bộ phận"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S31",
+    "Question": "Đi muộn phải báo cho ai?",
+    "Status": "Answered",
+    "Topics": [
+      "LateArrival"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S32",
+    "Question": "Đến muộn cần làm gì?",
+    "Status": "Answered",
+    "Topics": [
+      "LateArrival"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S33",
+    "Question": "Đi trễ xử lý thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "LateArrival"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S34",
+    "Question": "Muốn về sớm thì sao?",
+    "Status": "Answered",
+    "Topics": [
+      "EarlyDeparture"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S35",
+    "Question": "Về sớm cần ai đồng ý?",
+    "Status": "Answered",
+    "Topics": [
+      "EarlyDeparture"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S36",
+    "Question": "Ra ngoài trong giờ làm được không?",
+    "Status": "Answered",
+    "Topics": [
+      "LeavingOffice"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S37",
+    "Question": "Ra khỏi công ty giữa giờ cần ai đồng ý?",
+    "Status": "Answered",
+    "Topics": [
+      "LeavingOffice"
+    ],
+    "Contains": [
+      "quản lý trực tiếp"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S38",
+    "Question": "Khách vào công ty thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "Visitors"
+    ],
+    "Contains": [
+      "lễ tân"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S39",
+    "Question": "Người thân đến công ty cần làm gì?",
+    "Status": "Answered",
+    "Topics": [
+      "Visitors"
+    ],
+    "Contains": [
+      "lễ tân"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S40",
+    "Question": "Đăng ký phòng họp thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "MeetingRoom"
+    ],
+    "Contains": [
+      "hành chính"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S41",
+    "Question": "Đặt phòng họp với ai?",
+    "Status": "Answered",
+    "Topics": [
+      "MeetingRoom"
+    ],
+    "Contains": [
+      "hành chính"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S42",
+    "Question": "Có được mở nhạc ở chỗ làm không?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkplaceOrder"
+    ],
+    "Contains": [
+      "Giữ trật tự"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S43",
+    "Question": "Quy định giữ trật tự thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkplaceOrder"
+    ],
+    "Contains": [
+      "Giữ trật tự"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S44",
+    "Question": "Vệ sinh chỗ làm thế nào?",
+    "Status": "Answered",
+    "Topics": [
+      "OfficeCleanliness"
+    ],
+    "Contains": [
+      "đúng nơi"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S45",
+    "Question": "Bỏ rác ở đâu?",
+    "Status": "Answered",
+    "Topics": [
+      "OfficeCleanliness"
+    ],
+    "Contains": [
+      "đúng nơi"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S46",
+    "Question": "Được xin nghỉ phép bao nhiêu ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveWeekly",
+      "LeaveMonthly",
+      "LeaveException"
+    ],
+    "Contains": [
+      "3 ngày",
+      "8 ngày",
+      "đồng thời"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S47",
+    "Question": "Được xin vắng có phép tối đa mấy hôm?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveWeekly",
+      "LeaveMonthly",
+      "LeaveException"
+    ],
+    "Contains": [
+      "3 ngày",
+      "8 ngày",
+      "đồng thời"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S48",
+    "Question": "Một tuần được nghỉ tối đa bao nhiêu ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveWeekly",
+      "LeaveException"
+    ],
+    "Contains": [
+      "3 ngày"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S49",
+    "Question": "Mỗi tháng được xin nghỉ mấy ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveMonthly",
+      "LeaveException"
+    ],
+    "Contains": [
+      "8 ngày"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S50",
+    "Question": "Nghỉ 1 ngày làm việc thì báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Contains": [
+      "trước ít nhất 1 ngày"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S51",
+    "Question": "Nghỉ 2 ngày làm việc thì báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Contains": [
+      "trước ít nhất 5 ngày"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S52",
+    "Question": "Nghỉ 3 ngày làm việc thì báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Contains": [
+      "trước ít nhất 5 ngày"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S53",
+    "Question": "Xin nghỉ ba ngày phải báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Contains": [
+      "5 ngày"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S54",
+    "Question": "Nghỉ bao lâu?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S55",
+    "Question": "Giờ làm thế nào?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S56",
+    "Question": "Nội quy công ty thế nào?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S57",
+    "Question": "Ngày trước giờ tan làm là mấy giờ?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S58",
+    "Question": "Làm việc tại nhà mấy ngày?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S59",
+    "Question": "Bàn giao máy tính cho ai?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S60",
+    "Question": "Phép năm bao nhiêu ngày?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S61",
+    "Question": "Đi muộn bị phạt thế nào?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S62",
+    "Question": "Tôi còn bao nhiêu ngày nghỉ?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S63",
+    "Question": "Được đi muộn mấy phút?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Contains": [],
+    "Date": null
+  },
+  {
+    "Id": "S64",
+    "Question": "Giờ bắt đầu vào làm tháng 5/2026?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Contains": [
+      "8 giờ sáng"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S65",
+    "Question": "Giờ tan làm tháng 8/2026?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Contains": [
+      "16 giờ"
+    ],
+    "Date": null
+  },
+  {
+    "Id": "S66",
+    "Question": "Giờ bắt đầu vào làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Contains": [
+      "8 giờ sáng"
+    ],
+    "Date": "2027-11-11"
+  },
+  {
+    "Id": "S67",
+    "Question": "Giờ bắt đầu vào làm? ",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Contains": [],
+    "Date": "2025-12-31"
+  }
+]

@@ -1,0 +1,100 @@
+@page
+@model IndexModel
+@{ ViewData["Title"] = "Hỏi đáp quy chế"; }
+<header class="page-intro" aria-labelledby="welcome-title">
+    <h1 id="welcome-title">Tra cứu quy chế nội bộ</h1>
+    <p>Thời gian làm việc, đăng ký nghỉ và làm việc tại công ty.</p>
+</header>
+<div class="workspace">
+    <div class="question-column">
+        <section class="panel ask-panel" aria-labelledby="ask-title">
+            <h2 id="ask-title">Nhập câu hỏi</h2>
+            <form method="post" id="question-form" aria-busy="false">
+                <div asp-validation-summary="All" class="error" role="alert"></div>
+                <label asp-for="Question">Câu hỏi của bạn</label>
+                <textarea asp-for="Question" rows="3" maxlength="2000" required aria-describedby="question-hint" placeholder="Ví dụ: Xin nghỉ báo trước bao lâu?"></textarea>
+                <div class="input-caption"><span id="question-hint">Không cần chọn ngày nếu bạn hỏi quy chế hiện hành.</span><span id="question-count" aria-hidden="true">0/2000</span></div>
+                <div class="suggestions" aria-label="Câu hỏi gợi ý">
+                    <span class="suggestion-label">Thử hỏi</span>
+                    <button type="button" data-question="Giờ bắt đầu vào làm?">Giờ bắt đầu vào làm?</button>
+                    <button type="button" data-question="Xin nghỉ báo trước bao lâu?">Báo trước khi nghỉ</button>
+                    <button type="button" data-question="Đi muộn phải báo cho ai?">Đi muộn báo cho ai?</button>
+                </div>
+                <details class="date-options" open="@(Model.ApplicableDate.HasValue)">
+                    <summary><svg class="icon" aria-hidden="true"><use href="#i-calendar" /></svg> Tra cứu theo ngày khác <span class="optional-label">Tùy chọn</span></summary>
+                    <div class="date-fields">
+                        <label asp-for="ApplicableDate">Ngày áp dụng</label>
+                        <input asp-for="ApplicableDate" type="date" aria-describedby="date-hint" />
+                        <button type="button" class="text-button" id="clear-date">Bỏ chọn ngày</button>
+                        <p id="date-hint" class="hint">Bạn cũng có thể ghi thời điểm trong câu hỏi, ví dụ “Giờ tan làm tháng 5/2026?”.</p>
+                    </div>
+                </details>
+                <div class="ask-actions"><span class="hint current-policy"><span class="status-dot" aria-hidden="true"></span><span id="date-mode">Mặc định: quy chế hiện hành · Giờ Việt Nam</span></span><button type="submit" id="ask-button"><span id="ask-label">Hỏi quy chế</span><svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg></button></div>
+                <p id="submit-status" class="sr-only" role="status"></p>
+            </form>
+            @if (Model.TechnicalError is not null) { <p class="error" role="alert">@Model.TechnicalError</p> }
+        </section>
+        @if (Model.Result is { } result)
+        {
+            <article class="panel answer" id="ket-qua" aria-labelledby="answer-title" tabindex="-1">
+                <div class="answer-heading"><h2 id="answer-title">Câu trả lời</h2><span class="badge @result.Status">@IndexModel.StatusLabel(result.Status)</span></div>
+                <div class="asked-question"><span class="eyebrow">BẠN ĐÃ HỎI</span><p>@FullText.Expand(result.Question)</p></div>
+                <div class="response">@foreach (var paragraph in result.Response.Split("\n\n", StringSplitOptions.RemoveEmptyEntries)) { <p>@FullText.Expand(paragraph)</p> }</div>
+                <div class="lookup-period"><svg class="icon" aria-hidden="true"><use href="#i-calendar" /></svg>
+                    @if (result.ApplicableFrom is { } from && result.ApplicableTo is { } to)
+                    {
+                        <span>@(from == to ? "Ngày đã tra:" : "Khoảng đã tra:") <strong>@from.ToString("dd/MM/yyyy")@(from == to ? "" : $" — {to:dd/MM/yyyy}")</strong></span>
+                    }
+                    else { <span>Chưa xác định thời điểm áp dụng.</span> }
+                    <span class="result-id">Lượt hỏi #@result.Id</span>
+                </div>
+                @if (result.Citations.Count > 0)
+                {
+                    <div class="sources-heading"><h3><svg class="icon" aria-hidden="true"><use href="#i-book" /></svg> Căn cứ trả lời</h3><span class="hint">@result.Citations.Count trích dẫn</span></div>
+                    @foreach (var citation in result.Citations)
+                    {
+                        var clause = citation.Clause; var version = clause.DocumentVersion;
+                        <section class="citation" aria-label="@version.Document.Code · @clause.ArticleNumber">
+                            <div class="citation-heading"><strong>@version.Document.Code · @clause.ArticleNumber</strong><span class="version-label">Phiên bản @version.VersionLabel</span></div>
+                            <p class="hint">@FullText.Expand(version.Document.Title)</p><blockquote>@FullText.Expand(clause.Body)</blockquote>
+                            @if (FullText.HasChanges(clause.Body)) { <p class="hint expanded-terms-note">@FullText.SourceNotice</p> }
+                            <a class="source-link" asp-page="/Source" asp-route-id="@citation.Id">Xem nguồn <svg class="icon" aria-hidden="true"><use href="#i-external" /></svg></a>
+                        </section>
+                    }
+                    <p class="hint source-note">Mỗi nguồn giữ đúng phiên bản của lượt hỏi này, kể cả khi bạn mở lại lịch sử.</p>
+                }
+                else { <p class="hint source-note">Bạn có thể bổ sung thông tin rồi gửi câu hỏi mới ở phía trên.</p> }
+                <a class="back-to-question" href="#Question">↑ Đặt câu hỏi khác</a>
+            </article>
+        }
+        else
+        {
+            <div class="welcome-note"><svg class="icon" aria-hidden="true"><use href="#i-book" /></svg><p>Câu trả lời sẽ xuất hiện tại đây, kèm điều khoản và phiên bản để bạn kiểm tra.</p></div>
+        }
+    </div>
+    <aside class="sidebar" aria-label="Lịch sử và hướng dẫn">
+        <section class="panel history" aria-labelledby="history-title">
+            <div class="section-heading"><svg class="icon" aria-hidden="true"><use href="#i-history" /></svg><h2 id="history-title">Lịch sử của bạn</h2><span class="history-count">@Model.Recent.Count</span></div>
+            <p class="hint">Các lượt hỏi gần đây trên trình duyệt này.</p>
+            @if (Model.Recent.Count == 0)
+            {
+                <div class="history-empty"><strong>Chưa có lịch sử tra cứu</strong><p class="hint">Các lượt hỏi đã lưu sẽ xuất hiện tại đây.</p></div>
+            }
+            else
+            {
+                <div class="history-list">
+                    @foreach (var item in Model.Recent)
+                    {
+                        var selected = Model.Result?.Id == item.Id;
+                        <a class="history-item @(selected ? "selected" : "")" asp-page="/Index" asp-route-id="@item.Id" asp-fragment="ket-qua" aria-current="@(selected ? "page" : null)">
+                            <span>@FullText.Expand(item.Question)</span><small><span class="history-state @item.Status">@IndexModel.StatusLabel(item.Status)</span> · @item.AskedAt.ToOffset(TimeSpan.FromHours(7)).ToString("dd/MM HH:mm")</small>
+                        </a>
+                    }
+                </div>
+            }
+            <details class="history-privacy"><summary>Về lịch sử của bạn</summary><p class="hint">Hiển thị tối đa 30 lượt gần nhất. Lịch sử gắn với thông tin nhận diện được lưu trong trình duyệt; xóa thông tin này sẽ mất quyền mở lại lịch sử cũ trên trình duyệt đó.</p></details>
+        </section>
+        <section class="search-tips"><h3>Hỏi rõ hơn, tìm nhanh hơn</h3><ul><li>Nêu nội dung bạn cần: hạn mức, báo trước hoặc người duyệt.</li><li>Muốn xem quy chế cũ? Thêm ngày hoặc tháng/năm.</li><li>Chọn <strong>Xem nguồn</strong> để đọc điều khoản gốc.</li></ul></section>
+    </aside>
+</div>
+@section Scripts { <script src="~/js/question.js" asp-append-version="true" defer></script> }

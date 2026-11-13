@@ -1,0 +1,39 @@
+**/bin/
+**/obj/
+.vs/
+.tools/
+output/
+*.user
+
+# Local settings and secrets
+**/appsettings.Local.json
+**/appsettings.*.Local.json
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+*.bak
+*.mdf
+*.ldf
+**/browser-state.json
+**/storage-state*.json
+
+# Optional browser tooling and editor caches
+node_modules/
+playwright-report/
+test-results/
+.idea/
+.vscode/
+__pycache__/
+~$*
+*.log
+*.zip
+.DS_Store
+Thumbs.db
+
+# Report drafting and private working notes belong outside this repository
+/docs/bao-cao/
+/AGENTS.md

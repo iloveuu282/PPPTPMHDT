@@ -1,0 +1,868 @@
+{
+  "Database": "TroLyQuyCheDemo_Simple_3720d577",
+  "QuestionCount": 67,
+  "Failures": 0,
+  "Results": [
+    {
+      "Name": "S01 Gi\u1EDD b\u1EAFt \u0111\u1EA7u v\u00E0o l\u00E0m?",
+      "Passed": true,
+      "Detail": {
+        "Id": 45,
+        "Status": 0,
+        "Response": "B\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c l\u00FAc 8 gi\u1EDD s\u00E1ng.",
+        "Topics": [
+          "WorkStart"
+        ]
+      }
+    },
+    {
+      "Name": "S02 M\u1EA5y gi\u1EDD v\u00E0o ca?",
+      "Passed": true,
+      "Detail": {
+        "Id": 46,
+        "Status": 0,
+        "Response": "B\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c l\u00FAc 8 gi\u1EDD s\u00E1ng.",
+        "Topics": [
+          "WorkStart"
+        ]
+      }
+    },
+    {
+      "Name": "S03 \u0110i l\u00E0m l\u00FAc m\u1EA5y gi\u1EDD?",
+      "Passed": true,
+      "Detail": {
+        "Id": 47,
+        "Status": 0,
+        "Response": "B\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c l\u00FAc 8 gi\u1EDD s\u00E1ng.",
+        "Topics": [
+          "WorkStart"
+        ]
+      }
+    },
+    {
+      "Name": "S04 Gi\u1EDD tan l\u00E0m?",
+      "Passed": true,
+      "Detail": {
+        "Id": 48,
+        "Status": 0,
+        "Response": "K\u1EBFt th\u00FAc l\u00E0m vi\u1EC7c l\u00FAc 16 gi\u1EDD (4 gi\u1EDD chi\u1EC1u).",
+        "Topics": [
+          "WorkEnd"
+        ]
+      }
+    },
+    {
+      "Name": "S05 M\u1EA5y gi\u1EDD k\u1EBFt th\u00FAc l\u00E0m vi\u1EC7c?",
+      "Passed": true,
+      "Detail": {
+        "Id": 49,
+        "Status": 0,
+        "Response": "K\u1EBFt th\u00FAc l\u00E0m vi\u1EC7c l\u00FAc 16 gi\u1EDD (4 gi\u1EDD chi\u1EC1u).",
+        "Topics": [
+          "WorkEnd"
+        ]
+      }
+    },
+    {
+      "Name": "S06 Gi\u1EDD v\u1EC1 l\u00E0 m\u1EA5y gi\u1EDD?",
+      "Passed": true,
+      "Detail": {
+        "Id": 50,
+        "Status": 0,
+        "Response": "K\u1EBFt th\u00FAc l\u00E0m vi\u1EC7c l\u00FAc 16 gi\u1EDD (4 gi\u1EDD chi\u1EC1u).",
+        "Topics": [
+          "WorkEnd"
+        ]
+      }
+    },
+    {
+      "Name": "S07 L\u1ECBch l\u00E0m vi\u1EC7c th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 51,
+        "Status": 0,
+        "Response": "L\u00E0m vi\u1EC7c 5 ng\u00E0y m\u1ED7i tu\u1EA7n, t\u1EEB th\u1EE9 Hai \u0111\u1EBFn th\u1EE9 S\u00E1u. Th\u1EE9 B\u1EA3y v\u00E0 Ch\u1EE7 nh\u1EADt ngh\u1EC9.",
+        "Topics": [
+          "WorkSchedule"
+        ]
+      }
+    },
+    {
+      "Name": "S08 C\u00F4ng ty l\u00E0m nh\u1EEFng ng\u00E0y n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 52,
+        "Status": 0,
+        "Response": "L\u00E0m vi\u1EC7c 5 ng\u00E0y m\u1ED7i tu\u1EA7n, t\u1EEB th\u1EE9 Hai \u0111\u1EBFn th\u1EE9 S\u00E1u. Th\u1EE9 B\u1EA3y v\u00E0 Ch\u1EE7 nh\u1EADt ngh\u1EC9.",
+        "Topics": [
+          "WorkSchedule"
+        ]
+      }
+    },
+    {
+      "Name": "S09 Th\u1EE9 B\u1EA3y c\u00F3 l\u00E0m kh\u00F4ng?",
+      "Passed": true,
+      "Detail": {
+        "Id": 53,
+        "Status": 0,
+        "Response": "L\u00E0m vi\u1EC7c 5 ng\u00E0y m\u1ED7i tu\u1EA7n, t\u1EEB th\u1EE9 Hai \u0111\u1EBFn th\u1EE9 S\u00E1u. Th\u1EE9 B\u1EA3y v\u00E0 Ch\u1EE7 nh\u1EADt ngh\u1EC9.",
+        "Topics": [
+          "WorkSchedule"
+        ]
+      }
+    },
+    {
+      "Name": "S10 Ch\u1EE7 nh\u1EADt c\u00F3 l\u00E0m vi\u1EC7c kh\u00F4ng?",
+      "Passed": true,
+      "Detail": {
+        "Id": 54,
+        "Status": 0,
+        "Response": "L\u00E0m vi\u1EC7c 5 ng\u00E0y m\u1ED7i tu\u1EA7n, t\u1EEB th\u1EE9 Hai \u0111\u1EBFn th\u1EE9 S\u00E1u. Th\u1EE9 B\u1EA3y v\u00E0 Ch\u1EE7 nh\u1EADt ngh\u1EC9.",
+        "Topics": [
+          "WorkSchedule"
+        ]
+      }
+    },
+    {
+      "Name": "S11 M\u1ED9t tu\u1EA7n l\u00E0m m\u1EA5y ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 55,
+        "Status": 0,
+        "Response": "L\u00E0m vi\u1EC7c 5 ng\u00E0y m\u1ED7i tu\u1EA7n, t\u1EEB th\u1EE9 Hai \u0111\u1EBFn th\u1EE9 S\u00E1u. Th\u1EE9 B\u1EA3y v\u00E0 Ch\u1EE7 nh\u1EADt ngh\u1EC9.",
+        "Topics": [
+          "WorkSchedule"
+        ]
+      }
+    },
+    {
+      "Name": "S12 Ngh\u1EC9 tr\u01B0a l\u00FAc n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 56,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 tr\u01B0a t\u1EEB 12 gi\u1EDD \u0111\u1EBFn 13 gi\u1EDD.",
+        "Topics": [
+          "LunchBreak"
+        ]
+      }
+    },
+    {
+      "Name": "S13 Gi\u1EDD \u0103n tr\u01B0a th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 57,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 tr\u01B0a t\u1EEB 12 gi\u1EDD \u0111\u1EBFn 13 gi\u1EDD.",
+        "Topics": [
+          "LunchBreak"
+        ]
+      }
+    },
+    {
+      "Name": "S14 Ngh\u1EC9 tr\u01B0a bao l\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 58,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 tr\u01B0a t\u1EEB 12 gi\u1EDD \u0111\u1EBFn 13 gi\u1EDD.",
+        "Topics": [
+          "LunchBreak"
+        ]
+      }
+    },
+    {
+      "Name": "S15 M\u1ED7i ng\u00E0y l\u00E0m m\u1EA5y ti\u1EBFng?",
+      "Passed": true,
+      "Detail": {
+        "Id": 59,
+        "Status": 0,
+        "Response": "L\u00E0m vi\u1EC7c 7 gi\u1EDD m\u1ED7i ng\u00E0y, kh\u00F4ng t\u00EDnh 1 gi\u1EDD ngh\u1EC9 tr\u01B0a.",
+        "Topics": [
+          "WorkDuration"
+        ]
+      }
+    },
+    {
+      "Name": "S16 S\u1ED1 gi\u1EDD l\u00E0m m\u1ED7i ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 60,
+        "Status": 0,
+        "Response": "L\u00E0m vi\u1EC7c 7 gi\u1EDD m\u1ED7i ng\u00E0y, kh\u00F4ng t\u00EDnh 1 gi\u1EDD ngh\u1EC9 tr\u01B0a.",
+        "Topics": [
+          "WorkDuration"
+        ]
+      }
+    },
+    {
+      "Name": "S17 L\u00E0m vi\u1EC7c bao nhi\u00EAu gi\u1EDD m\u1ED9t ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 61,
+        "Status": 0,
+        "Response": "L\u00E0m vi\u1EC7c 7 gi\u1EDD m\u1ED7i ng\u00E0y, kh\u00F4ng t\u00EDnh 1 gi\u1EDD ngh\u1EC9 tr\u01B0a.",
+        "Topics": [
+          "WorkDuration"
+        ]
+      }
+    },
+    {
+      "Name": "S18 Xin ngh\u1EC9 b\u00E1o tr\u01B0\u1EDBc bao l\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 62,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 1 ng\u00E0y l\u00E0m vi\u1EC7c ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 1 ng\u00E0y l\u00E0m vi\u1EC7c.\n\nNgh\u1EC9 t\u1EEB 2 ng\u00E0y l\u00E0m vi\u1EC7c tr\u1EDF l\u00EAn ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 5 ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveNotice",
+          "LeaveNotice"
+        ]
+      }
+    },
+    {
+      "Name": "S19 Xin v\u1EAFng c\u00F3 ph\u00E9p c\u1EA7n b\u00E1o tr\u01B0\u1EDBc m\u1EA5y ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 63,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 1 ng\u00E0y l\u00E0m vi\u1EC7c ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 1 ng\u00E0y l\u00E0m vi\u1EC7c.\n\nNgh\u1EC9 t\u1EEB 2 ng\u00E0y l\u00E0m vi\u1EC7c tr\u1EDF l\u00EAn ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 5 ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveNotice",
+          "LeaveNotice"
+        ]
+      }
+    },
+    {
+      "Name": "S20 \u0110\u0103ng k\u00FD ngh\u1EC9 ph\u1EA3i th\u00F4ng b\u00E1o tr\u01B0\u1EDBc bao l\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 64,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 1 ng\u00E0y l\u00E0m vi\u1EC7c ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 1 ng\u00E0y l\u00E0m vi\u1EC7c.\n\nNgh\u1EC9 t\u1EEB 2 ng\u00E0y l\u00E0m vi\u1EC7c tr\u1EDF l\u00EAn ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 5 ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveNotice",
+          "LeaveNotice"
+        ]
+      }
+    },
+    {
+      "Name": "S21 Xin ngh\u1EC9 ai duy\u1EC7t?",
+      "Passed": true,
+      "Detail": {
+        "Id": 65,
+        "Status": 0,
+        "Response": "Y\u00EAu c\u1EA7u ngh\u1EC9 trong gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp duy\u1EC7t tr\u01B0\u1EDBc khi ngh\u1EC9.",
+        "Topics": [
+          "LeaveApproval"
+        ]
+      }
+    },
+    {
+      "Name": "S22 Ngh\u1EC9 ph\u00E9p ai \u0111\u1ED3ng \u00FD?",
+      "Passed": true,
+      "Detail": {
+        "Id": 66,
+        "Status": 0,
+        "Response": "Y\u00EAu c\u1EA7u ngh\u1EC9 trong gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp duy\u1EC7t tr\u01B0\u1EDBc khi ngh\u1EC9.",
+        "Topics": [
+          "LeaveApproval"
+        ]
+      }
+    },
+    {
+      "Name": "S23 C\u1EA5p n\u00E0o duy\u1EC7t y\u00EAu c\u1EA7u ngh\u1EC9?",
+      "Passed": true,
+      "Detail": {
+        "Id": 67,
+        "Status": 0,
+        "Response": "Y\u00EAu c\u1EA7u ngh\u1EC9 trong gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp duy\u1EC7t tr\u01B0\u1EDBc khi ngh\u1EC9.",
+        "Topics": [
+          "LeaveApproval"
+        ]
+      }
+    },
+    {
+      "Name": "S24 Th\u1EE7 t\u1EE5c xin ngh\u1EC9 th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 68,
+        "Status": 0,
+        "Response": "G\u1EEDi y\u00EAu c\u1EA7u ngh\u1EC9 cho qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp, ghi r\u00F5 ng\u00E0y b\u1EAFt \u0111\u1EA7u, ng\u00E0y k\u1EBFt th\u00FAc, s\u1ED1 ng\u00E0y l\u00E0m vi\u1EC7c d\u1EF1 \u0111\u1ECBnh ngh\u1EC9 v\u00E0 l\u00FD do.",
+        "Topics": [
+          "LeaveRequest"
+        ]
+      }
+    },
+    {
+      "Name": "S25 \u0110\u0103ng k\u00FD ngh\u1EC9 \u1EDF \u0111\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 69,
+        "Status": 0,
+        "Response": "G\u1EEDi y\u00EAu c\u1EA7u ngh\u1EC9 cho qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp, ghi r\u00F5 ng\u00E0y b\u1EAFt \u0111\u1EA7u, ng\u00E0y k\u1EBFt th\u00FAc, s\u1ED1 ng\u00E0y l\u00E0m vi\u1EC7c d\u1EF1 \u0111\u1ECBnh ngh\u1EC9 v\u00E0 l\u00FD do.",
+        "Topics": [
+          "LeaveRequest"
+        ]
+      }
+    },
+    {
+      "Name": "S26 Xin ngh\u1EC9 g\u1EEDi cho ai?",
+      "Passed": true,
+      "Detail": {
+        "Id": 70,
+        "Status": 0,
+        "Response": "G\u1EEDi y\u00EAu c\u1EA7u ngh\u1EC9 cho qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp, ghi r\u00F5 ng\u00E0y b\u1EAFt \u0111\u1EA7u, ng\u00E0y k\u1EBFt th\u00FAc, s\u1ED1 ng\u00E0y l\u00E0m vi\u1EC7c d\u1EF1 \u0111\u1ECBnh ngh\u1EC9 v\u00E0 l\u00FD do.",
+        "Topics": [
+          "LeaveRequest"
+        ]
+      }
+    },
+    {
+      "Name": "S27 Ngh\u1EC9 ph\u00E9p t\u00EDnh theo ng\u00E0y l\u00E0m vi\u1EC7c hay ng\u00E0y l\u1ECBch?",
+      "Passed": true,
+      "Detail": {
+        "Id": 71,
+        "Status": 0,
+        "Response": "Tu\u1EA7n t\u00EDnh t\u1EEB th\u1EE9 Hai \u0111\u1EBFn Ch\u1EE7 nh\u1EADt; th\u00E1ng t\u00EDnh theo th\u00E1ng d\u01B0\u01A1ng l\u1ECBch. S\u1ED1 ng\u00E0y ngh\u1EC9 v\u00E0 th\u1EDDi h\u1EA1n b\u00E1o tr\u01B0\u1EDBc t\u00EDnh theo ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveCalendar"
+        ]
+      }
+    },
+    {
+      "Name": "S28 Tu\u1EA7n \u0111\u0103ng k\u00FD ngh\u1EC9 t\u00EDnh th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 72,
+        "Status": 0,
+        "Response": "Tu\u1EA7n t\u00EDnh t\u1EEB th\u1EE9 Hai \u0111\u1EBFn Ch\u1EE7 nh\u1EADt; th\u00E1ng t\u00EDnh theo th\u00E1ng d\u01B0\u01A1ng l\u1ECBch. S\u1ED1 ng\u00E0y ngh\u1EC9 v\u00E0 th\u1EDDi h\u1EA1n b\u00E1o tr\u01B0\u1EDBc t\u00EDnh theo ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveCalendar"
+        ]
+      }
+    },
+    {
+      "Name": "S29 Mu\u1ED1n xin ngh\u1EC9 th\u00EAm th\u00EC sao?",
+      "Passed": true,
+      "Detail": {
+        "Id": 73,
+        "Status": 0,
+        "Response": "Gi\u1EDBi h\u1EA1n tu\u1EA7n v\u00E0 th\u00E1ng \u00E1p d\u1EE5ng \u0111\u1ED3ng th\u1EDDi. Mu\u1ED1n ngh\u1EC9 v\u01B0\u1EE3t m\u1ED9t trong hai gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c tr\u01B0\u1EDFng b\u1ED9 ph\u1EADn x\u00E9t duy\u1EC7t.",
+        "Topics": [
+          "LeaveException"
+        ]
+      }
+    },
+    {
+      "Name": "S30 Ngh\u1EC9 v\u01B0\u1EE3t h\u1EA1n m\u1EE9c ai duy\u1EC7t?",
+      "Passed": true,
+      "Detail": {
+        "Id": 74,
+        "Status": 0,
+        "Response": "Gi\u1EDBi h\u1EA1n tu\u1EA7n v\u00E0 th\u00E1ng \u00E1p d\u1EE5ng \u0111\u1ED3ng th\u1EDDi. Mu\u1ED1n ngh\u1EC9 v\u01B0\u1EE3t m\u1ED9t trong hai gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c tr\u01B0\u1EDFng b\u1ED9 ph\u1EADn x\u00E9t duy\u1EC7t.",
+        "Topics": [
+          "LeaveException"
+        ]
+      }
+    },
+    {
+      "Name": "S31 \u0110i mu\u1ED9n ph\u1EA3i b\u00E1o cho ai?",
+      "Passed": true,
+      "Detail": {
+        "Id": 75,
+        "Status": 0,
+        "Response": "\u0110i mu\u1ED9n ph\u1EA3i b\u00E1o cho qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp tr\u01B0\u1EDBc gi\u1EDD b\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LateArrival"
+        ]
+      }
+    },
+    {
+      "Name": "S32 \u0110\u1EBFn mu\u1ED9n c\u1EA7n l\u00E0m g\u00EC?",
+      "Passed": true,
+      "Detail": {
+        "Id": 76,
+        "Status": 0,
+        "Response": "\u0110i mu\u1ED9n ph\u1EA3i b\u00E1o cho qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp tr\u01B0\u1EDBc gi\u1EDD b\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LateArrival"
+        ]
+      }
+    },
+    {
+      "Name": "S33 \u0110i tr\u1EC5 x\u1EED l\u00FD th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 77,
+        "Status": 0,
+        "Response": "\u0110i mu\u1ED9n ph\u1EA3i b\u00E1o cho qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp tr\u01B0\u1EDBc gi\u1EDD b\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LateArrival"
+        ]
+      }
+    },
+    {
+      "Name": "S34 Mu\u1ED1n v\u1EC1 s\u1EDBm th\u00EC sao?",
+      "Passed": true,
+      "Detail": {
+        "Id": 78,
+        "Status": 0,
+        "Response": "Mu\u1ED1n v\u1EC1 s\u1EDBm ph\u1EA3i \u0111\u01B0\u1EE3c qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp \u0111\u1ED3ng \u00FD tr\u01B0\u1EDBc khi r\u1EDDi c\u00F4ng ty.",
+        "Topics": [
+          "EarlyDeparture"
+        ]
+      }
+    },
+    {
+      "Name": "S35 V\u1EC1 s\u1EDBm c\u1EA7n ai \u0111\u1ED3ng \u00FD?",
+      "Passed": true,
+      "Detail": {
+        "Id": 79,
+        "Status": 0,
+        "Response": "Mu\u1ED1n v\u1EC1 s\u1EDBm ph\u1EA3i \u0111\u01B0\u1EE3c qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp \u0111\u1ED3ng \u00FD tr\u01B0\u1EDBc khi r\u1EDDi c\u00F4ng ty.",
+        "Topics": [
+          "EarlyDeparture"
+        ]
+      }
+    },
+    {
+      "Name": "S36 Ra ngo\u00E0i trong gi\u1EDD l\u00E0m \u0111\u01B0\u1EE3c kh\u00F4ng?",
+      "Passed": true,
+      "Detail": {
+        "Id": 80,
+        "Status": 0,
+        "Response": "Ra ngo\u00E0i trong gi\u1EDD l\u00E0m ph\u1EA3i \u0111\u01B0\u1EE3c qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp \u0111\u1ED3ng \u00FD.",
+        "Topics": [
+          "LeavingOffice"
+        ]
+      }
+    },
+    {
+      "Name": "S37 Ra kh\u1ECFi c\u00F4ng ty gi\u1EEFa gi\u1EDD c\u1EA7n ai \u0111\u1ED3ng \u00FD?",
+      "Passed": true,
+      "Detail": {
+        "Id": 81,
+        "Status": 0,
+        "Response": "Ra ngo\u00E0i trong gi\u1EDD l\u00E0m ph\u1EA3i \u0111\u01B0\u1EE3c qu\u1EA3n l\u00FD tr\u1EF1c ti\u1EBFp \u0111\u1ED3ng \u00FD.",
+        "Topics": [
+          "LeavingOffice"
+        ]
+      }
+    },
+    {
+      "Name": "S38 Kh\u00E1ch v\u00E0o c\u00F4ng ty th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 82,
+        "Status": 0,
+        "Response": "Kh\u00E1ch ph\u1EA3i \u0111\u0103ng k\u00FD v\u1EDBi l\u1EC5 t\u00E2n v\u00E0 \u0111\u01B0\u1EE3c ng\u01B0\u1EDDi ph\u1EE5 tr\u00E1ch \u0111\u1ED3ng \u00FD tr\u01B0\u1EDBc khi v\u00E0o khu v\u1EF1c l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "Visitors"
+        ]
+      }
+    },
+    {
+      "Name": "S39 Ng\u01B0\u1EDDi th\u00E2n \u0111\u1EBFn c\u00F4ng ty c\u1EA7n l\u00E0m g\u00EC?",
+      "Passed": true,
+      "Detail": {
+        "Id": 83,
+        "Status": 0,
+        "Response": "Kh\u00E1ch ph\u1EA3i \u0111\u0103ng k\u00FD v\u1EDBi l\u1EC5 t\u00E2n v\u00E0 \u0111\u01B0\u1EE3c ng\u01B0\u1EDDi ph\u1EE5 tr\u00E1ch \u0111\u1ED3ng \u00FD tr\u01B0\u1EDBc khi v\u00E0o khu v\u1EF1c l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "Visitors"
+        ]
+      }
+    },
+    {
+      "Name": "S40 \u0110\u0103ng k\u00FD ph\u00F2ng h\u1ECDp th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 84,
+        "Status": 0,
+        "Response": "\u0110\u0103ng k\u00FD ph\u00F2ng h\u1ECDp v\u1EDBi b\u1ED9 ph\u1EADn h\u00E0nh ch\u00EDnh tr\u01B0\u1EDBc khi s\u1EED d\u1EE5ng; k\u1EBFt th\u00FAc \u0111\u00FAng gi\u1EDD \u0111\u00E3 \u0111\u0103ng k\u00FD.",
+        "Topics": [
+          "MeetingRoom"
+        ]
+      }
+    },
+    {
+      "Name": "S41 \u0110\u1EB7t ph\u00F2ng h\u1ECDp v\u1EDBi ai?",
+      "Passed": true,
+      "Detail": {
+        "Id": 85,
+        "Status": 0,
+        "Response": "\u0110\u0103ng k\u00FD ph\u00F2ng h\u1ECDp v\u1EDBi b\u1ED9 ph\u1EADn h\u00E0nh ch\u00EDnh tr\u01B0\u1EDBc khi s\u1EED d\u1EE5ng; k\u1EBFt th\u00FAc \u0111\u00FAng gi\u1EDD \u0111\u00E3 \u0111\u0103ng k\u00FD.",
+        "Topics": [
+          "MeetingRoom"
+        ]
+      }
+    },
+    {
+      "Name": "S42 C\u00F3 \u0111\u01B0\u1EE3c m\u1EDF nh\u1EA1c \u1EDF ch\u1ED7 l\u00E0m kh\u00F4ng?",
+      "Passed": true,
+      "Detail": {
+        "Id": 86,
+        "Status": 0,
+        "Response": "Gi\u1EEF tr\u1EADt t\u1EF1 t\u1EA1i khu v\u1EF1c l\u00E0m vi\u1EC7c, kh\u00F4ng l\u00E0m \u1EA3nh h\u01B0\u1EDFng \u0111\u1EBFn ng\u01B0\u1EDDi kh\u00E1c.",
+        "Topics": [
+          "WorkplaceOrder"
+        ]
+      }
+    },
+    {
+      "Name": "S43 Quy \u0111\u1ECBnh gi\u1EEF tr\u1EADt t\u1EF1 th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 87,
+        "Status": 0,
+        "Response": "Gi\u1EEF tr\u1EADt t\u1EF1 t\u1EA1i khu v\u1EF1c l\u00E0m vi\u1EC7c, kh\u00F4ng l\u00E0m \u1EA3nh h\u01B0\u1EDFng \u0111\u1EBFn ng\u01B0\u1EDDi kh\u00E1c.",
+        "Topics": [
+          "WorkplaceOrder"
+        ]
+      }
+    },
+    {
+      "Name": "S44 V\u1EC7 sinh ch\u1ED7 l\u00E0m th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 88,
+        "Status": 0,
+        "Response": "Gi\u1EEF v\u1EC7 sinh ch\u1ED7 l\u00E0m, b\u1ECF r\u00E1c \u0111\u00FAng n\u01A1i quy \u0111\u1ECBnh.",
+        "Topics": [
+          "OfficeCleanliness"
+        ]
+      }
+    },
+    {
+      "Name": "S45 B\u1ECF r\u00E1c \u1EDF \u0111\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 89,
+        "Status": 0,
+        "Response": "Gi\u1EEF v\u1EC7 sinh ch\u1ED7 l\u00E0m, b\u1ECF r\u00E1c \u0111\u00FAng n\u01A1i quy \u0111\u1ECBnh.",
+        "Topics": [
+          "OfficeCleanliness"
+        ]
+      }
+    },
+    {
+      "Name": "S46 \u0110\u01B0\u1EE3c xin ngh\u1EC9 ph\u00E9p bao nhi\u00EAu ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 90,
+        "Status": 0,
+        "Response": "\u0110\u01B0\u1EE3c \u0111\u0103ng k\u00FD ngh\u1EC9 t\u1ED1i \u0111a 3 ng\u00E0y l\u00E0m vi\u1EC7c m\u1ED7i tu\u1EA7n.\n\n\u0110\u01B0\u1EE3c \u0111\u0103ng k\u00FD ngh\u1EC9 t\u1ED1i \u0111a 8 ng\u00E0y l\u00E0m vi\u1EC7c m\u1ED7i th\u00E1ng.\n\nGi\u1EDBi h\u1EA1n tu\u1EA7n v\u00E0 th\u00E1ng \u00E1p d\u1EE5ng \u0111\u1ED3ng th\u1EDDi. Mu\u1ED1n ngh\u1EC9 v\u01B0\u1EE3t m\u1ED9t trong hai gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c tr\u01B0\u1EDFng b\u1ED9 ph\u1EADn x\u00E9t duy\u1EC7t.",
+        "Topics": [
+          "LeaveException",
+          "LeaveMonthly",
+          "LeaveWeekly"
+        ]
+      }
+    },
+    {
+      "Name": "S47 \u0110\u01B0\u1EE3c xin v\u1EAFng c\u00F3 ph\u00E9p t\u1ED1i \u0111a m\u1EA5y h\u00F4m?",
+      "Passed": true,
+      "Detail": {
+        "Id": 91,
+        "Status": 0,
+        "Response": "\u0110\u01B0\u1EE3c \u0111\u0103ng k\u00FD ngh\u1EC9 t\u1ED1i \u0111a 3 ng\u00E0y l\u00E0m vi\u1EC7c m\u1ED7i tu\u1EA7n.\n\n\u0110\u01B0\u1EE3c \u0111\u0103ng k\u00FD ngh\u1EC9 t\u1ED1i \u0111a 8 ng\u00E0y l\u00E0m vi\u1EC7c m\u1ED7i th\u00E1ng.\n\nGi\u1EDBi h\u1EA1n tu\u1EA7n v\u00E0 th\u00E1ng \u00E1p d\u1EE5ng \u0111\u1ED3ng th\u1EDDi. Mu\u1ED1n ngh\u1EC9 v\u01B0\u1EE3t m\u1ED9t trong hai gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c tr\u01B0\u1EDFng b\u1ED9 ph\u1EADn x\u00E9t duy\u1EC7t.",
+        "Topics": [
+          "LeaveException",
+          "LeaveMonthly",
+          "LeaveWeekly"
+        ]
+      }
+    },
+    {
+      "Name": "S48 M\u1ED9t tu\u1EA7n \u0111\u01B0\u1EE3c ngh\u1EC9 t\u1ED1i \u0111a bao nhi\u00EAu ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 92,
+        "Status": 0,
+        "Response": "\u0110\u01B0\u1EE3c \u0111\u0103ng k\u00FD ngh\u1EC9 t\u1ED1i \u0111a 3 ng\u00E0y l\u00E0m vi\u1EC7c m\u1ED7i tu\u1EA7n.\n\nGi\u1EDBi h\u1EA1n tu\u1EA7n v\u00E0 th\u00E1ng \u00E1p d\u1EE5ng \u0111\u1ED3ng th\u1EDDi. Mu\u1ED1n ngh\u1EC9 v\u01B0\u1EE3t m\u1ED9t trong hai gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c tr\u01B0\u1EDFng b\u1ED9 ph\u1EADn x\u00E9t duy\u1EC7t.",
+        "Topics": [
+          "LeaveException",
+          "LeaveWeekly"
+        ]
+      }
+    },
+    {
+      "Name": "S49 M\u1ED7i th\u00E1ng \u0111\u01B0\u1EE3c xin ngh\u1EC9 m\u1EA5y ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 93,
+        "Status": 0,
+        "Response": "\u0110\u01B0\u1EE3c \u0111\u0103ng k\u00FD ngh\u1EC9 t\u1ED1i \u0111a 8 ng\u00E0y l\u00E0m vi\u1EC7c m\u1ED7i th\u00E1ng.\n\nGi\u1EDBi h\u1EA1n tu\u1EA7n v\u00E0 th\u00E1ng \u00E1p d\u1EE5ng \u0111\u1ED3ng th\u1EDDi. Mu\u1ED1n ngh\u1EC9 v\u01B0\u1EE3t m\u1ED9t trong hai gi\u1EDBi h\u1EA1n ph\u1EA3i \u0111\u01B0\u1EE3c tr\u01B0\u1EDFng b\u1ED9 ph\u1EADn x\u00E9t duy\u1EC7t.",
+        "Topics": [
+          "LeaveException",
+          "LeaveMonthly"
+        ]
+      }
+    },
+    {
+      "Name": "S50 Ngh\u1EC9 1 ng\u00E0y l\u00E0m vi\u1EC7c th\u00EC b\u00E1o tr\u01B0\u1EDBc bao l\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 94,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 1 ng\u00E0y l\u00E0m vi\u1EC7c ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 1 ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveNotice"
+        ]
+      }
+    },
+    {
+      "Name": "S51 Ngh\u1EC9 2 ng\u00E0y l\u00E0m vi\u1EC7c th\u00EC b\u00E1o tr\u01B0\u1EDBc bao l\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 95,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 t\u1EEB 2 ng\u00E0y l\u00E0m vi\u1EC7c tr\u1EDF l\u00EAn ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 5 ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveNotice"
+        ]
+      }
+    },
+    {
+      "Name": "S52 Ngh\u1EC9 3 ng\u00E0y l\u00E0m vi\u1EC7c th\u00EC b\u00E1o tr\u01B0\u1EDBc bao l\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 96,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 t\u1EEB 2 ng\u00E0y l\u00E0m vi\u1EC7c tr\u1EDF l\u00EAn ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 5 ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveNotice"
+        ]
+      }
+    },
+    {
+      "Name": "S53 Xin ngh\u1EC9 ba ng\u00E0y ph\u1EA3i b\u00E1o tr\u01B0\u1EDBc bao l\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 97,
+        "Status": 0,
+        "Response": "Ngh\u1EC9 t\u1EEB 2 ng\u00E0y l\u00E0m vi\u1EC7c tr\u1EDF l\u00EAn ph\u1EA3i g\u1EEDi y\u00EAu c\u1EA7u tr\u01B0\u1EDBc \u00EDt nh\u1EA5t 5 ng\u00E0y l\u00E0m vi\u1EC7c.",
+        "Topics": [
+          "LeaveNotice"
+        ]
+      }
+    },
+    {
+      "Name": "S54 Ngh\u1EC9 bao l\u00E2u?",
+      "Passed": true,
+      "Detail": {
+        "Id": 98,
+        "Status": 1,
+        "Response": "B\u1EA1n h\u1ECFi \u0111\u01B0\u1EE3c ngh\u1EC9 bao nhi\u00EAu ng\u00E0y, ph\u1EA3i b\u00E1o tr\u01B0\u1EDBc bao l\u00E2u hay ai duy\u1EC7t?",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S55 Gi\u1EDD l\u00E0m th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 99,
+        "Status": 1,
+        "Response": "B\u1EA1n h\u1ECFi gi\u1EDD b\u1EAFt \u0111\u1EA7u, gi\u1EDD k\u1EBFt th\u00FAc, ngh\u1EC9 tr\u01B0a hay l\u1ECBch l\u00E0m vi\u1EC7c trong tu\u1EA7n?",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S56 N\u1ED9i quy c\u00F4ng ty th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 100,
+        "Status": 1,
+        "Response": "B\u1EA1n h\u1ECFi \u0111i mu\u1ED9n, v\u1EC1 s\u1EDBm, ra ngo\u00E0i, ti\u1EBFp kh\u00E1ch, ph\u00F2ng h\u1ECDp, tr\u1EADt t\u1EF1 hay v\u1EC7 sinh?",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S57 Ng\u00E0y tr\u01B0\u1EDBc gi\u1EDD tan l\u00E0m l\u00E0 m\u1EA5y gi\u1EDD?",
+      "Passed": true,
+      "Detail": {
+        "Id": 101,
+        "Status": 1,
+        "Response": "B\u1EA1n mu\u1ED1n tra quy ch\u1EBF v\u00E0o ng\u00E0y ho\u1EB7c th\u00E1ng/n\u0103m n\u00E0o trong qu\u00E1 kh\u1EE9?",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S58 L\u00E0m vi\u1EC7c t\u1EA1i nh\u00E0 m\u1EA5y ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 102,
+        "Status": 2,
+        "Response": "Ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 tr\u1EA3 l\u1EDDi: kho quy ch\u1EBF ch\u01B0a c\u00F3 \u0111i\u1EC1u kho\u1EA3n ph\u00F9 h\u1EE3p quy \u0111\u1ECBnh l\u00E0m vi\u1EC7c t\u1EA1i nh\u00E0 ho\u1EB7c l\u00E0m vi\u1EC7c t\u1EEB xa; ph\u1EA1m vi hi\u1EC7n t\u1EA1i ch\u1EC9 g\u1ED3m th\u1EDDi gian l\u00E0m vi\u1EC7c, \u0111\u0103ng k\u00FD ngh\u1EC9 v\u00E0 l\u00E0m vi\u1EC7c t\u1EA1i c\u00F4ng ty. Kh\u00F4ng suy ra n\u1ED9i dung n\u00E0y t\u1EEB \u0111i\u1EC1u kho\u1EA3n kh\u00E1c.",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S59 B\u00E0n giao m\u00E1y t\u00EDnh cho ai?",
+      "Passed": true,
+      "Detail": {
+        "Id": 103,
+        "Status": 2,
+        "Response": "Ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 tr\u1EA3 l\u1EDDi: kho quy ch\u1EBF ch\u01B0a c\u00F3 \u0111i\u1EC1u kho\u1EA3n ph\u00F9 h\u1EE3p quy \u0111\u1ECBnh s\u1EED d\u1EE5ng ho\u1EB7c b\u00E0n giao thi\u1EBFt b\u1ECB. Kh\u00F4ng suy ra n\u1ED9i dung n\u00E0y t\u1EEB \u0111i\u1EC1u kho\u1EA3n kh\u00E1c.",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S60 Ph\u00E9p n\u0103m bao nhi\u00EAu ng\u00E0y?",
+      "Passed": true,
+      "Detail": {
+        "Id": 104,
+        "Status": 2,
+        "Response": "Ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 tr\u1EA3 l\u1EDDi: kho quy ch\u1EBF ch\u01B0a c\u00F3 \u0111i\u1EC1u kho\u1EA3n ph\u00F9 h\u1EE3p quy \u0111\u1ECBnh ph\u00E9p n\u0103m ho\u1EB7c lo\u1EA1i ngh\u1EC9 \u0111\u1EB7c bi\u1EC7t; kh\u00F4ng suy t\u1EEB gi\u1EDBi h\u1EA1n \u0111\u0103ng k\u00FD ngh\u1EC9 tu\u1EA7n v\u00E0 th\u00E1ng. Kh\u00F4ng suy ra n\u1ED9i dung n\u00E0y t\u1EEB \u0111i\u1EC1u kho\u1EA3n kh\u00E1c.",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S61 \u0110i mu\u1ED9n b\u1ECB ph\u1EA1t th\u1EBF n\u00E0o?",
+      "Passed": true,
+      "Detail": {
+        "Id": 105,
+        "Status": 2,
+        "Response": "Ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 tr\u1EA3 l\u1EDDi: kho quy ch\u1EBF ch\u01B0a c\u00F3 \u0111i\u1EC1u kho\u1EA3n ph\u00F9 h\u1EE3p quy \u0111\u1ECBnh ti\u1EC1n l\u01B0\u01A1ng, ch\u1EA5m c\u00F4ng ho\u1EB7c x\u1EED ph\u1EA1t. Kh\u00F4ng suy ra n\u1ED9i dung n\u00E0y t\u1EEB \u0111i\u1EC1u kho\u1EA3n kh\u00E1c.",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S62 T\u00F4i c\u00F2n bao nhi\u00EAu ng\u00E0y ngh\u1EC9?",
+      "Passed": true,
+      "Detail": {
+        "Id": 106,
+        "Status": 2,
+        "Response": "Ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 tr\u1EA3 l\u1EDDi: kho quy ch\u1EBF ch\u01B0a c\u00F3 \u0111i\u1EC1u kho\u1EA3n ph\u00F9 h\u1EE3p quy \u0111\u1ECBnh s\u1ED1 ng\u00E0y ngh\u1EC9 th\u1EF1c t\u1EBF c\u1EE7a c\u00E1 nh\u00E2n; h\u1EC7 th\u1ED1ng tra quy \u0111\u1ECBnh, ch\u01B0a qu\u1EA3n l\u00FD \u0111\u01A1n v\u00E0 s\u1ED1 d\u01B0 ngh\u1EC9. Kh\u00F4ng suy ra n\u1ED9i dung n\u00E0y t\u1EEB \u0111i\u1EC1u kho\u1EA3n kh\u00E1c.",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S63 \u0110\u01B0\u1EE3c \u0111i mu\u1ED9n m\u1EA5y ph\u00FAt?",
+      "Passed": true,
+      "Detail": {
+        "Id": 107,
+        "Status": 2,
+        "Response": "Ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 tr\u1EA3 l\u1EDDi: kho quy ch\u1EBF ch\u01B0a c\u00F3 \u0111i\u1EC1u kho\u1EA3n ph\u00F9 h\u1EE3p quy \u0111\u1ECBnh th\u1EDDi l\u01B0\u1EE3ng \u0111i mu\u1ED9n ho\u1EB7c v\u1EC1 s\u1EDBm \u0111\u01B0\u1EE3c cho ph\u00E9p. Kh\u00F4ng suy ra n\u1ED9i dung n\u00E0y t\u1EEB \u0111i\u1EC1u kho\u1EA3n kh\u00E1c.",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "S64 Gi\u1EDD b\u1EAFt \u0111\u1EA7u v\u00E0o l\u00E0m th\u00E1ng 5/2026?",
+      "Passed": true,
+      "Detail": {
+        "Id": 108,
+        "Status": 0,
+        "Response": "B\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c l\u00FAc 8 gi\u1EDD s\u00E1ng.",
+        "Topics": [
+          "WorkStart"
+        ]
+      }
+    },
+    {
+      "Name": "S65 Gi\u1EDD tan l\u00E0m th\u00E1ng 8/2026?",
+      "Passed": true,
+      "Detail": {
+        "Id": 109,
+        "Status": 0,
+        "Response": "K\u1EBFt th\u00FAc l\u00E0m vi\u1EC7c l\u00FAc 16 gi\u1EDD (4 gi\u1EDD chi\u1EC1u).",
+        "Topics": [
+          "WorkEnd"
+        ]
+      }
+    },
+    {
+      "Name": "S66 Gi\u1EDD b\u1EAFt \u0111\u1EA7u v\u00E0o l\u00E0m?",
+      "Passed": true,
+      "Detail": {
+        "Id": 110,
+        "Status": 0,
+        "Response": "B\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c l\u00FAc 8 gi\u1EDD s\u00E1ng.",
+        "Topics": [
+          "WorkStart"
+        ]
+      }
+    },
+    {
+      "Name": "S67 Gi\u1EDD b\u1EAFt \u0111\u1EA7u v\u00E0o l\u00E0m? ",
+      "Passed": true,
+      "Detail": {
+        "Id": 111,
+        "Status": 2,
+        "Response": "Ch\u01B0a \u0111\u1EE7 c\u0103n c\u1EE9 \u0111\u1EC3 tr\u1EA3 l\u1EDDi: kho quy ch\u1EBF ch\u01B0a c\u00F3 \u0111i\u1EC1u kho\u1EA3n ph\u00F9 h\u1EE3p quy \u0111\u1ECBnh phi\u00EAn b\u1EA3n \u0111\u00E3 duy\u1EC7t c\u1EE7a QC-THOIGIAN-LAMVIEC c\u00F3 hi\u1EC7u l\u1EF1c cho kho\u1EA3ng ng\u00E0y \u0111\u00E3 y\u00EAu c\u1EA7u (gi\u1EDD b\u1EAFt \u0111\u1EA7u l\u00E0m vi\u1EC7c). Kh\u00F4ng suy ra n\u1ED9i dung n\u00E0y t\u1EEB \u0111i\u1EC1u kho\u1EA3n kh\u00E1c.",
+        "Topics": []
+      }
+    },
+    {
+      "Name": "DB01 Kho ch\u1EC9 c\u00F3 ba v\u0103n b\u1EA3n m\u1EDBi",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "DB02 C\u00F3 \u0111\u00FAng 20 \u0111i\u1EC1u kho\u1EA3n m\u1EDBi",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD01 Ch\u1EB7n qu\u1EA3n tr\u1ECB kh\u00F4ng c\u00F3 quy\u1EC1n",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD02 Nh\u00E1p kh\u00F4ng \u0111\u01B0\u1EE3c d\u00F9ng cho c\u00E2u h\u1ECFi",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD03 RowVersion c\u0169 b\u1ECB ch\u1EB7n",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD04 Ch\u1EB7n ch\u1ED3ng l\u1EA5n n\u1EBFu kh\u00F4ng ch\u1ECDn thay th\u1EBF",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD05 Duy\u1EC7t thay th\u1EBF \u0111\u1ED5i \u0111\u00E1p \u00E1n theo SQL",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD06 Th\u1EDDi \u0111i\u1EC3m c\u0169 v\u1EABn d\u00F9ng b\u1EA3n tr\u01B0\u1EDBc",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD07 Th\u00E1ng ch\u1EE9a chuy\u1EC3n b\u1EA3n ph\u1EA3i h\u1ECFi l\u1EA1i",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD08 M\u1ED9t n\u0103m sau v\u1EABn d\u00F9ng b\u1EA3n m\u1EDBi",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD09 Trigger \u0111\u00E3 b\u1EADt l\u1EA1i v\u00E0 b\u1EA3o v\u1EC7 ngu\u1ED3n",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD10 Thu h\u1ED3i kh\u00F4ng h\u1ED3i sinh b\u1EA3n tr\u01B0\u1EDBc",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD11 Ngu\u1ED3n l\u1ECBch s\u1EED v\u1EABn \u0111\u00FAng b\u1EA3n c\u0169",
+      "Passed": true,
+      "Detail": null
+    },
+    {
+      "Name": "AD12 \u0110\u1ECDc l\u1EA1i t\u1EEB k\u1EBFt n\u1ED1i m\u1EDBi gi\u1EEF d\u1EEF li\u1EC7u",
+      "Passed": true,
+      "Detail": null
+    }
+  ]
+}

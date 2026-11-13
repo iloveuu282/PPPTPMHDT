@@ -1,0 +1,54 @@
+﻿[
+    {
+        "Name":  "New build starts",
+        "Passed":  true
+    },
+    {
+        "Name":  "HTTP 200 /",
+        "Passed":  true
+    },
+    {
+        "Name":  "HTTP 200 /quy-che",
+        "Passed":  true
+    },
+    {
+        "Name":  "Three current policies from SQL",
+        "Passed":  true
+    },
+    {
+        "Name":  "HTTP 200 /css/site.css",
+        "Passed":  true
+    },
+    {
+        "Name":  "HTTP 200 /js/question.js",
+        "Passed":  true
+    },
+    {
+        "Name":  "HTTP 200 /js/admin-editor.js",
+        "Passed":  true
+    },
+    {
+        "Name":  "Admin requires login",
+        "Passed":  true
+    },
+    {
+        "Name":  "Unused route/asset absent /Privacy",
+        "Passed":  true
+    },
+    {
+        "Name":  "Unused route/asset absent /Admin/Learn",
+        "Passed":  true
+    },
+    {
+        "Name":  "Unused route/asset absent /Admin/Explain",
+        "Passed":  true
+    },
+    {
+        "Name":  "Unused route/asset absent /lib/jquery/dist/jquery.js",
+        "Passed":  true
+    },
+    {
+        "Name":  "Missing setup password rejected before SQL",
+        "Passed":  true
+    }
+]

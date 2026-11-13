@@ -1,0 +1,6 @@
+@page
+@model TroLyQuyChe.Web.Pages.Admin.HistoryModel
+@{ ViewData["Title"] = "Lịch sử hỏi đáp"; }
+<a asp-page="Index">← Kho quy chế</a><h1>Lịch sử hỏi đáp toàn hệ thống</h1><p>100 lượt gần nhất. Chỉ quản trị viên được xem tổng hợp.</p>
+@foreach (var q in Model.Entries) { <article class="panel document-card"><h2>#@q.Id · @FullText.Expand(q.Question)</h2><p class="badge @q.Status">@TroLyQuyChe.Web.Pages.IndexModel.StatusLabel(q.Status)</p><p class="response">@FullText.Expand(q.Response)</p><p class="hint">@(q.ApplicableFrom?.ToString("dd/MM/yyyy") ?? "Chưa xác định") – @(q.ApplicableTo?.ToString("dd/MM/yyyy") ?? "Chưa xác định")</p>@foreach (var c in q.Citations) { <p>@c.Clause.DocumentVersion.Document.Code · @c.Clause.ArticleNumber · @c.Clause.DocumentVersion.VersionLabel <a asp-page="/Source" asp-route-id="@c.Id">Xem nguồn</a></p> }</article> }
+@if (Model.Entries.Count == 0) { <p class="panel">Chưa có lượt hỏi nào.</p> }

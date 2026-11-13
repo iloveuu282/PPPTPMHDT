@@ -1,0 +1,333 @@
+[
+  {
+    "Question": "Làm ơn cho biết giờ tan làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Vui lòng cho biết mấy giờ vào làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Cho tôi biết lịch đi làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkSchedule"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Công ty làm việc từ thứ mấy đến thứ mấy?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkSchedule"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Mỗi tuần làm việc bao nhiêu ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkSchedule"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Ngày làm việc bắt đầu lúc mấy giờ?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Không hỏi giờ vào làm, tôi hỏi giờ tan làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Có được tan ca sớm không?",
+    "Status": "Answered",
+    "Topics": [
+      "EarlyDeparture"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Đi muộn phải báo trước giờ bắt đầu làm việc cho ai?",
+    "Status": "Answered",
+    "Topics": [
+      "LateArrival"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ từ 2 ngày trở lên cần báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Xin nghỉ trong 3 ngày làm việc phải báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Xin nghỉ hai hôm cần xin phép trước mấy ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Xin vắng có phép 3 hôm phải báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Xin nghỉ 0 ngày phải báo trước bao lâu?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Xin nghỉ nửa ngày phải báo trước bao lâu?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ -2 ngày thì báo trước bao lâu?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ 1,5 ngày cần báo trước bao lâu?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ 999999999999999999999999999999999999 ngày báo trước bao lâu?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ 1 ngày hay nghỉ 3 ngày thì phải báo trước bao lâu?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ 4 ngày mỗi tuần có được không?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveWeekly",
+      "LeaveException"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Xin nghỉ quá 8 ngày trong tháng thì sao?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveException"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Được nghỉ tối đa 1 tháng mấy ngày?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveMonthly",
+      "LeaveException"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Xin nghỉ có cần quản lý duyệt không?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveApproval"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ 4 ngày trong một tuần ai duyệt?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveWeekly",
+      "LeaveApproval",
+      "LeaveException"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Được nghỉ bao nhiêu ngày và phải báo trước bao lâu?",
+    "Status": "Answered",
+    "Topics": [
+      "LeaveWeekly",
+      "LeaveMonthly",
+      "LeaveException",
+      "LeaveNotice",
+      "LeaveNotice"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Giờ bắt đầu và giờ tan làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart",
+      "WorkEnd"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Giờ bắt đầu làm việc và xin nghỉ báo trước bao lâu?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ phép năm được mấy ngày?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Được nghỉ tối đa bao nhiêu ngày mỗi năm?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Tôi còn được nghỉ bao nhiêu ngày?",
+    "Status": "InsufficientEvidence",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Tháng 5/2026 giờ tan làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Tháng 8 năm 2026 giờ vào làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Ngày 31/02/2026 giờ vào làm?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Giờ vào làm ngày 15/05/2026?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Giờ tan làm năm 2027?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Giờ vào làm theo quy chế cũ?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Giờ vào làm tháng 5/2026?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": "2026-08-01"
+  },
+  {
+    "Question": "Giờ tan làm tháng trước?",
+    "Status": "NeedsClarification",
+    "Topics": [],
+    "Date": null
+  },
+  {
+    "Question": "Giờ tan làm ngày 2026-05-15?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Date": null
+  },
+  {
+    "Question": "Giờ vào làm?",
+    "Status": "Answered",
+    "Topics": [
+      "WorkStart"
+    ],
+    "Date": "2027-11-11"
+  },
+  {
+    "Question": "lam on cho biet gio tan lam?",
+    "Topics": [
+      "WorkEnd"
+    ],
+    "Status": "Answered",
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ trên 1 ngày phải báo trước bao lâu?",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Status": "Answered",
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ hơn 1 ngày làm việc cần báo trước mấy ngày?",
+    "Topics": [
+      "LeaveNotice"
+    ],
+    "Status": "Answered",
+    "Date": null
+  },
+  {
+    "Question": "Nghỉ trên 99999999999999999999999999999 ngày báo trước bao lâu?",
+    "Topics": [],
+    "Status": "NeedsClarification",
+    "Date": null
+  }
+]

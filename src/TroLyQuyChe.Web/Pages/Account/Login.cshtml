@@ -1,0 +1,5 @@
+@page
+@model TroLyQuyChe.Web.Pages.Account.LoginModel
+@{ ViewData["Title"] = "Đăng nhập quản trị"; }
+<section class="panel narrow"><div class="eyebrow">QUẢN TRỊ QUY CHẾ</div><h1>Đăng nhập</h1><p>Nhân viên có thể hỏi đáp ngay. Tài khoản quản trị dùng để quản lý nguồn và vòng đời phiên bản.</p>
+<form method="post"><div asp-validation-summary="All" class="error"></div><label asp-for="Username">Tài khoản</label><input asp-for="Username" autocomplete="username" maxlength="80" /><label asp-for="Password">Mật khẩu</label><input asp-for="Password" autocomplete="current-password" /><button>Đăng nhập</button></form></section>

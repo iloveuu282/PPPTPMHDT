@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Mai Viet Hoang" version="24.7.17">
+  <diagram id="03_ST_VongDoiPhienBan" name="Trạng thái và hiệu lực của phiên bản">
+    <mxGraphModel dx="1360" dy="1440" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1360" pageHeight="1440" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" parent="1" value="Trợ lý hỏi đáp quy chế có trích dẫn • Mai Việt Hoàng" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=text;fillColor=none;strokeColor=none;fontSize=17;fontColor=#52606d;fontStyle=0;align=left;verticalAlign=middle;spacing=2;">
+          <mxGeometry x="40" y="22" width="1280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" value="Trạng thái và hiệu lực của phiên bản" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=text;fillColor=none;strokeColor=none;fontSize=29;fontColor=#273747;fontStyle=1;align=left;verticalAlign=middle;spacing=2;">
+          <mxGeometry x="40" y="62" width="1280" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" value="Đối chiếu mã nguồn hiện tại • 12/11/2026" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=text;fillColor=none;strokeColor=none;fontSize=15;fontColor=#52606d;fontStyle=0;align=left;verticalAlign=middle;spacing=2;">
+          <mxGeometry x="40" y="1400" width="1280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" value="" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;ellipse;fillColor=#273747;strokeColor=#273747;">
+          <mxGeometry x="665" y="150" width="22" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" value="Draft — Bản nháp&lt;br/&gt;&lt;br/&gt;Được sửa thông tin và điều khoản.&lt;br/&gt;Chưa được dùng để trả lời." vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;rounded=0;fillColor=#eaf1f8;spacing=14;rounded=1;arcSize=12;fontSize=22;">
+          <mxGeometry x="450" y="265" width="450" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" value="Approved — Đã duyệt&lt;br/&gt;&lt;br/&gt;Giữ nguyên nội dung và ngày gốc.&lt;br/&gt;Khả năng áp dụng được tính theo ngày&lt;br/&gt;và quan hệ với bản kế tiếp." vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;rounded=0;fillColor=#eaf1f8;spacing=14;rounded=1;arcSize=12;fontSize=22;">
+          <mxGeometry x="450" y="665" width="450" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" value="Revoked — Đã thu hồi&lt;br/&gt;&lt;br/&gt;Không dùng cho câu hỏi mới.&lt;br/&gt;Nguồn lịch sử vẫn được giữ." vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;rounded=0;fillColor=#f5f5f5;spacing=14;rounded=1;arcSize=12;fontSize=22;">
+          <mxGeometry x="450" y="1130" width="450" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" parent="1" edge="1" value="&lt;div style=&quot;width:340px;text-align:center;line-height:1.18&quot;&gt;CreateDraftAsync / Created&lt;/div&gt;" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;rounded=0;endArrow=block;endFill=1;startArrow=none;dashed=0;fontSize=18;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="676" y="172" as="sourcePoint" />
+            <mxPoint x="676" y="265" as="targetPoint" />
+            <mxPoint x="0" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" parent="1" edge="1" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;rounded=0;endArrow=block;endFill=1;startArrow=none;dashed=0;fontSize=18;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.4;entryX=0.24;entryY=0;" source="c5" target="c5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="335" as="sourcePoint" />
+            <mxPoint x="560" y="265" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="335" />
+              <mxPoint x="370" y="220" />
+              <mxPoint x="560" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" parent="1" value="SaveDraftAsync&lt;br/&gt;[Admin + RowVersion hợp lệ]&lt;br/&gt;/ lưu nháp và nhật ký Edited" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=text;fillColor=none;strokeColor=none;fontSize=19;fontColor=#273747;fontStyle=0;align=center;verticalAlign=middle;spacing=2;">
+          <mxGeometry x="35" y="245" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" parent="1" edge="1" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;rounded=0;endArrow=block;endFill=1;startArrow=none;dashed=0;fontSize=18;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" source="c5" target="c6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="676" y="435" as="sourcePoint" />
+            <mxPoint x="676" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c12" parent="1" value="ApproveAsync&lt;br/&gt;[Admin, Draft, RowVersion và dữ liệu hợp lệ]&lt;br/&gt;/ ApprovedAt, Approved và nhật ký&lt;br/&gt;Duyệt/thay thế trong cùng giao dịch" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=text;fillColor=none;strokeColor=none;fontSize=19;fontColor=#273747;fontStyle=0;align=left;verticalAlign=middle;spacing=2;fillColor=#ffffff;">
+          <mxGeometry x="730" y="530" width="580" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" parent="1" edge="1" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;rounded=0;endArrow=block;endFill=1;startArrow=none;dashed=0;fontSize=18;labelBackgroundColor=#ffffff;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" source="c6" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="676" y="880" as="sourcePoint" />
+            <mxPoint x="676" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" parent="1" value="RevokeAsync&lt;br/&gt;[Admin, Approved, RowVersion hợp lệ, có lý do]&lt;br/&gt;/ Revoked và nhật ký thu hồi" vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=text;fillColor=none;strokeColor=none;fontSize=19;fontColor=#273747;fontStyle=0;align=left;verticalAlign=middle;spacing=2;fillColor=#ffffff;">
+          <mxGeometry x="730" y="965" width="580" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" value="Khi duyệt&lt;br/&gt;Kiểm điều khoản, cận báo trước, chủ đề thiếu và khoảng hiệu lực.&lt;br/&gt;Mặc định có thể dùng ngày duyệt theo giờ Việt Nam.&lt;br/&gt;Lỗi kiểm tra: không chuyển trạng thái." vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=note;size=16;fillColor=#fffdf5;align=left;verticalAlign=top;spacing=14;fontSize=19;">
+          <mxGeometry x="960" y="265" width="350" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" value="Hiệu lực tính toán&lt;br/&gt;• Chưa đến ngày áp dụng.&lt;br/&gt;• Đang áp dụng.&lt;br/&gt;• Hết khoảng áp dụng.&lt;br/&gt;Đây không phải các giá trị mới của VersionStatus." vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=note;size=16;fillColor=#fffdf5;align=left;verticalAlign=top;spacing=14;fontSize=19;">
+          <mxGeometry x="960" y="665" width="350" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="1" value="Thay thế&lt;br/&gt;Bản mới giữ ReplacesVersionId trỏ về bản trước.&lt;br/&gt;Bản trước vẫn Approved; không sửa ngày gốc.&lt;br/&gt;Cùng ngày: nguồn trước giữ cho lịch sử, câu mới dùng bản sau." vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=note;size=16;fillColor=#fffdf5;align=left;verticalAlign=top;spacing=14;fontSize=19;">
+          <mxGeometry x="35" y="665" width="350" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="1" value="Thu hồi bản kế tiếp không tự phục hồi bản trước. Không có thao tác xóa nguồn hoặc chuyển Revoked trở lại Approved trong chức năng quản trị hiện tại." vertex="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#273747;strokeColor=#526577;strokeWidth=1.5;shadow=0;shape=note;size=16;fillColor=#fffdf5;align=left;verticalAlign=top;spacing=14;fontSize=18;">
+          <mxGeometry x="200" y="1330" width="960" height="65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

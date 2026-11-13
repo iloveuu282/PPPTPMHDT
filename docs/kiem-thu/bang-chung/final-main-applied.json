@@ -1,0 +1,41 @@
+{
+  "Database": "TroLyQuyCheDb",
+  "TimeVersionId": 107,
+  "Preservation": [
+    {
+      "Table": "Documents",
+      "OldRows": 3,
+      "Preserved": true
+    },
+    {
+      "Table": "DocumentVersions",
+      "OldRows": 7,
+      "Preserved": true
+    },
+    {
+      "Table": "Clauses",
+      "OldRows": 32,
+      "Preserved": true
+    },
+    {
+      "Table": "QaEntries",
+      "OldRows": 50,
+      "Preserved": true
+    },
+    {
+      "Table": "Citations",
+      "OldRows": 47,
+      "Preserved": true
+    },
+    {
+      "Table": "AppUsers",
+      "OldRows": 1,
+      "Preserved": true
+    },
+    {
+      "Table": "VersionActions",
+      "OldRows": 12,
+      "Preserved": true
+    }
+  ]
+}

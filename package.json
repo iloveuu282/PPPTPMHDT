@@ -1,0 +1,10 @@
+{
+  "name": "tro-ly-quy-che-ui-checks",
+  "private": true,
+  "scripts": {
+    "check:ui": "node scripts/check_final_ui.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

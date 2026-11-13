@@ -1,0 +1,57 @@
+{
+  "Failed": 0,
+  "Checks": [
+    {
+      "Name": "FAD01 Ch\u1EB7n duy\u1EC7t kho\u1EA3ng b\u00E1o tr\u01B0\u1EDBc ch\u1ED3ng nhau",
+      "Passed": true
+    },
+    {
+      "Name": "FAD02 Ch\u1EB7n kho\u1EA3ng b\u00E1o tr\u01B0\u1EDBc b\u1ECF s\u00F3t ng\u00E0y",
+      "Passed": true
+    },
+    {
+      "Name": "FAD03 Ch\u1EB7n ng\u01B0\u1EE1ng qu\u00E1 l\u1EDBn tr\u01B0\u1EDBc khi ghi SQL",
+      "Passed": true
+    },
+    {
+      "Name": "FAD04 Ch\u1EB7n ng\u01B0\u1EE1ng l\u1EBB ng\u00E0y",
+      "Passed": true
+    },
+    {
+      "Name": "FAD05 Ch\u1EB7n g\u00E1n sai ch\u1EE7 \u0111\u1EC1 cho v\u0103n b\u1EA3n",
+      "Passed": true
+    },
+    {
+      "Name": "FAD06 Ch\u1EB7n duy\u1EC7t nh\u00E1p r\u1ED7ng",
+      "Passed": true
+    },
+    {
+      "Name": "FAD07 Thi\u1EBFu ch\u1EE7 \u0111\u1EC1 ph\u1EA3i x\u00E1c nh\u1EADn r\u00F5",
+      "Passed": true
+    },
+    {
+      "Name": "FAD08 Cho ph\u00E9p b\u1ECF ch\u1EE7 \u0111\u1EC1 khi ch\u1EE7 \u0111\u1ED9ng x\u00E1c nh\u1EADn",
+      "Passed": true
+    },
+    {
+      "Name": "FAD09 \u0110\u00EDnh ch\u00EDnh c\u00F9ng ng\u00E0y gi\u1EEF ngu\u1ED3n c\u0169",
+      "Passed": true
+    },
+    {
+      "Name": "FAD10 C\u00E2u m\u1EDBi d\u00F9ng \u0111\u00FAng b\u1EA3n \u0111\u00EDnh ch\u00EDnh",
+      "Passed": true
+    },
+    {
+      "Name": "FAD11 Duy\u1EC7t \u0111\u1ED3ng th\u1EDDi ch\u1EC9 m\u1ED9t b\u1EA3n th\u00E0nh c\u00F4ng",
+      "Passed": true
+    },
+    {
+      "Name": "FAD12 L\u1ECBch s\u1EED gi\u1EEF ngu\u1ED3n tr\u01B0\u1EDBc \u0111\u00EDnh ch\u00EDnh c\u00F9ng ng\u00E0y",
+      "Passed": true
+    },
+    {
+      "Name": "FAD13 Thu h\u1ED3i \u0111\u00EDnh ch\u00EDnh kh\u00F4ng h\u1ED3i sinh b\u1EA3n tr\u01B0\u1EDBc",
+      "Passed": true
+    }
+  ]
+}

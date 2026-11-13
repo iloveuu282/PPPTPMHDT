@@ -1,0 +1,25 @@
+﻿{
+    "Equal":  true,
+    "Before":  {
+                   "Documents":  3,
+                   "Versions":  7,
+                   "Clauses":  32,
+                   "Questions":  70,
+                   "Citations":  68,
+                   "Actions":  12,
+                   "LatestQuestionId":  384,
+                   "DisabledTriggers":  0
+               },
+    "Database":  "TroLyQuyCheDb",
+    "ProcessId":  18412,
+    "After":  {
+                  "Documents":  3,
+                  "Versions":  7,
+                  "Clauses":  32,
+                  "Questions":  70,
+                  "Citations":  68,
+                  "Actions":  12,
+                  "LatestQuestionId":  384,
+                  "DisabledTriggers":  0
+              }
+}
