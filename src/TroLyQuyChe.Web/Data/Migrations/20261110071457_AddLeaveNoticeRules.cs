@@ -86,8 +86,8 @@ namespace TroLyQuyChe.Web.Data.Migrations
                 columns: new[] { "Id", "ArticleNumber", "Body", "DocumentVersionId", "MaximumLeaveDaysInclusive", "MinimumLeaveDaysExclusive", "SourceLocation", "Topic" },
                 values: new object[,]
                 {
-                    { 41, "Điều 1", "Nghỉ từ 1 ngày làm việc trở xuống phải gửi yêu cầu trước ít nhất 2 ngày làm việc và được quản lý trực tiếp duyệt.", 4, 1m, 0m, "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-NP v1.0", "LeaveNotice" },
-                    { 42, "Điều 2", "Nghỉ trên 1 ngày làm việc phải gửi yêu cầu trước ít nhất 5 ngày làm việc và được quản lý trực tiếp duyệt.", 4, null, 1m, "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-NP v1.0", "LeaveNotice" }
+                    { 41, "Điều 1", "Nghỉ từ 1 ngày làm việc trở xuống phải gửi yêu cầu trước ít nhất 2 ngày làm việc và được quản lý trực tiếp duyệt.", 4, 1m, 0m, "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-NP v1.0", "LeaveNotice" },
+                    { 42, "Điều 2", "Nghỉ trên 1 ngày làm việc phải gửi yêu cầu trước ít nhất 5 ngày làm việc và được quản lý trực tiếp duyệt.", 4, null, 1m, "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-NP v1.0", "LeaveNotice" }
                 });
         }
 

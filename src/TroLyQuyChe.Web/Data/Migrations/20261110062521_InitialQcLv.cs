@@ -139,12 +139,12 @@ namespace TroLyQuyChe.Web.Data.Migrations
                 columns: new[] { "Id", "ArticleNumber", "Body", "DocumentVersionId", "SourceLocation", "Topic" },
                 values: new object[,]
                 {
-                    { 11, "Điều 1", "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.", 1, "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v1.0", "WorkingHours" },
-                    { 12, "Điều 2", "Nhân viên được làm việc từ xa tối đa 1 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.", 1, "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v1.0", "RemoteWork" },
-                    { 21, "Điều 1", "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.", 2, "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v2.0", "WorkingHours" },
-                    { 22, "Điều 2", "Nhân viên được làm việc từ xa tối đa 2 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.", 2, "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v2.0", "RemoteWork" },
-                    { 31, "Điều 1", "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.", 3, "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v3.0", "WorkingHours" },
-                    { 32, "Điều 2", "Nhân viên được làm việc từ xa tối đa 3 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.", 3, "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v3.0", "RemoteWork" }
+                    { 11, "Điều 1", "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.", 1, "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v1.0", "WorkingHours" },
+                    { 12, "Điều 2", "Nhân viên được làm việc từ xa tối đa 1 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.", 1, "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v1.0", "RemoteWork" },
+                    { 21, "Điều 1", "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.", 2, "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v2.0", "WorkingHours" },
+                    { 22, "Điều 2", "Nhân viên được làm việc từ xa tối đa 2 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.", 2, "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v2.0", "RemoteWork" },
+                    { 31, "Điều 1", "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.", 3, "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v3.0", "WorkingHours" },
+                    { 32, "Điều 2", "Nhân viên được làm việc từ xa tối đa 3 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.", 3, "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v3.0", "RemoteWork" }
                 });
 
             migrationBuilder.CreateIndex(

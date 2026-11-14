@@ -138,7 +138,7 @@ namespace TroLyQuyChe.Web.Data.Migrations
                             DocumentVersionId = 4,
                             MaximumLeaveDaysInclusive = 1m,
                             MinimumLeaveDaysExclusive = 0m,
-                            SourceLocation = "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-NP v1.0",
+                            SourceLocation = "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-NP v1.0",
                             Topic = "LeaveNotice"
                         },
                         new
@@ -148,7 +148,7 @@ namespace TroLyQuyChe.Web.Data.Migrations
                             Body = "Nghỉ trên 1 ngày làm việc phải gửi yêu cầu trước ít nhất 5 ngày làm việc và được quản lý trực tiếp duyệt.",
                             DocumentVersionId = 4,
                             MinimumLeaveDaysExclusive = 1m,
-                            SourceLocation = "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-NP v1.0",
+                            SourceLocation = "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-NP v1.0",
                             Topic = "LeaveNotice"
                         },
                         new
@@ -157,7 +157,7 @@ namespace TroLyQuyChe.Web.Data.Migrations
                             ArticleNumber = "Điều 1",
                             Body = "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.",
                             DocumentVersionId = 1,
-                            SourceLocation = "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v1.0",
+                            SourceLocation = "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v1.0",
                             Topic = "WorkingHours"
                         },
                         new
@@ -166,7 +166,7 @@ namespace TroLyQuyChe.Web.Data.Migrations
                             ArticleNumber = "Điều 2",
                             Body = "Nhân viên được làm việc từ xa tối đa 1 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.",
                             DocumentVersionId = 1,
-                            SourceLocation = "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v1.0",
+                            SourceLocation = "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v1.0",
                             Topic = "RemoteWork"
                         },
                         new
@@ -175,7 +175,7 @@ namespace TroLyQuyChe.Web.Data.Migrations
                             ArticleNumber = "Điều 1",
                             Body = "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.",
                             DocumentVersionId = 2,
-                            SourceLocation = "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v2.0",
+                            SourceLocation = "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v2.0",
                             Topic = "WorkingHours"
                         },
                         new
@@ -184,7 +184,7 @@ namespace TroLyQuyChe.Web.Data.Migrations
                             ArticleNumber = "Điều 2",
                             Body = "Nhân viên được làm việc từ xa tối đa 2 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.",
                             DocumentVersionId = 2,
-                            SourceLocation = "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v2.0",
+                            SourceLocation = "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v2.0",
                             Topic = "RemoteWork"
                         },
                         new
@@ -193,7 +193,7 @@ namespace TroLyQuyChe.Web.Data.Migrations
                             ArticleNumber = "Điều 1",
                             Body = "Giờ làm việc từ 08:30 đến 17:30, thứ Hai đến thứ Sáu. Thời gian nghỉ trưa từ 12:00 đến 13:00.",
                             DocumentVersionId = 3,
-                            SourceLocation = "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v3.0",
+                            SourceLocation = "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v3.0",
                             Topic = "WorkingHours"
                         },
                         new
@@ -202,7 +202,7 @@ namespace TroLyQuyChe.Web.Data.Migrations
                             ArticleNumber = "Điều 2",
                             Body = "Nhân viên được làm việc từ xa tối đa 3 ngày mỗi tuần. Yêu cầu làm việc từ xa phải được quản lý trực tiếp duyệt.",
                             DocumentVersionId = 3,
-                            SourceLocation = "docs/nghiep-vu/02_QuyChe_GiaLap_MinhAn.md • QC-LV v3.0",
+                            SourceLocation = "Nguồn quy chế giả lập Mai Việt Hoàng (bộ cũ) • QC-LV v3.0",
                             Topic = "RemoteWork"
                         },
                         new
